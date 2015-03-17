@@ -1,0 +1,12 @@
+20150316T133806: vcip2015.org/404.php
+PHP Warning:  file_get_contents(/hermes/bosweb26c/b2902/ipg.vcip2015org1/published_data.txt): failed to open stream: No such file or directory in /hermes/bosweb26c/b2902/ipg.vcip2015org1/404.php on line 7
+PHP Warning:  file_get_contents(userid.txt): failed to open stream: No such file or directory in /hermes/bosweb26c/b2902/ipg.vcip2015org1/404.php on line 41
+
+20150316T133836: vcip2015.org/404.php
+PHP Warning:  file_get_contents(/hermes/bosweb26c/b2902/ipg.vcip2015org1/published_data.txt): failed to open stream: No such file or directory in /hermes/bosweb26c/b2902/ipg.vcip2015org1/404.php on line 7
+PHP Warning:  file_get_contents(userid.txt): failed to open stream: No such file or directory in /hermes/bosweb26c/b2902/ipg.vcip2015org1/404.php on line 41
+
+20150316T133845: vcip2015.org/404.php
+PHP Warning:  file_get_contents(/hermes/bosweb26c/b2902/ipg.vcip2015org1/published_data.txt): failed to open stream: No such file or directory in /hermes/bosweb26c/b2902/ipg.vcip2015org1/404.php on line 7
+PHP Warning:  file_get_contents(userid.txt): failed to open stream: No such file or directory in /hermes/bosweb26c/b2902/ipg.vcip2015org1/404.php on line 41
+
