@@ -4,7 +4,7 @@
    // your page initialization code here
    // the DOM will be available here
   var due = new Date();
-  due.setFullYear(2015, 4, 15);
+  due.setFullYear(2015, 5, 8);
   var event_date = new Date();
   event_date.setFullYear(2015, 11, 13);
   var date = new Date();
