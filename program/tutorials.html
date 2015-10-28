@@ -1,0 +1,733 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+
+<!-- Mirrored from sites.google.com/site/ieeevcip2015/program by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Mar 2015 17:30:05 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<!-- /Added by HTTrack -->
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <script type="text/javascript">
+        /* Copyright 2008 Google. */
+        (function() {
+            var b = window,
+                e = "chrome",
+                g = "tick",
+                h = "wtsrt_",
+                l = "tbsd_",
+                m = "tbnd_",
+                n = "start",
+                p = "_wtsrt",
+                q = "_tbnd",
+                r = "CSI/index.html";
+            (function() {
+                function k(a) {
+                    this.t = {};
+                    this.tick = function(a, d, c) {
+                        this.t[a] = [void 0 != c ? c : (new Date).getTime(), d];
+                        if (void 0 == c) try {
+                            b.console.timeStamp(r + a)
+                        } catch (f) {}
+                    };
+                    this[g](n, null, a)
+                }
+                var a;
+                b.performance && (a = b.performance.timing);
+                var t = a ? new k(a.responseStart) : new k;
+                b.jstiming = {
+                    Timer: k,
+                    load: t
+                };
+                if (a) {
+                    var d = a.navigationStart,
+                        f = a.responseStart;
+                    0 < d && f >= d && (b.jstiming.srt = f - d)
+                }
+                if (a) {
+                    var c = b.jstiming.load;
+                    0 < d && f >= d && (c[g](p, void 0, d), c[g](h, p, f), c[g](l, h))
+                }
+                try {
+                    a = null, b[e] && b[e].csi && (a = Math.floor(b[e].csi().pageT),
+                        c && 0 < d && (c[g](q, void 0, b[e].csi().startE), c[g](m, q, d))), null == a && b.gtbExternal && (a = b.gtbExternal.pageT()), null == a && b.external && (a = b.external.pageT, c && 0 < d && (c[g](q, void 0, b.external.startE), c[g](m, q, d))), a && (b.jstiming.pt = a)
+                } catch (u) {}
+            })();
+        })()
+    </script>
+    <link rel="shortcut icon" type="image/x-icon" href="http://www.google.com/images/icons/product/sites-16.ico" />
+    <link rel="apple-touch-icon" href="../ssl.gstatic.com/sites/p/b9df9c/system/app/images/apple-touch-icon.png" type="image/png" />
+    <script type="text/javascript">
+        /* Copyright 2008 Google. */
+        (function() {
+            var d = window,
+                e = "length",
+                h = "",
+                k = "__duration__",
+                l = "function";
+
+            function m(c) {
+                return document.getElementById(c)
+            }
+            d.byId = m;
+
+            function n(c) {
+                return c.replace(/^\s+|\s+$/g, h)
+            }
+            d.trim = n;
+            var p = [],
+                q = 0;
+            d.JOT_addListener = function(c, a, b) {
+                var f = new String(q++);
+                c = {
+                    eventName: c,
+                    handler: a,
+                    compId: b,
+                    key: f
+                };
+                p.push(c);
+                return f
+            };
+            d.JOT_removeListenerByKey = function(c) {
+                for (var a = 0; a < p[e]; a++)
+                    if (p[a].key == c) {
+                        p.splice(a, 1);
+                        break
+                    }
+            };
+            d.JOT_removeAllListenersForName = function(c) {
+                for (var a = 0; a < p[e]; a++) p[a].eventName == c && p.splice(a, 1)
+            };
+            d.JOT_postEvent = function(c, a, b) {
+                var f = {
+                    eventName: c,
+                    eventSrc: a || {},
+                    payload: b || {}
+                };
+                if (d.JOT_fullyLoaded)
+                    for (a = p[e], b = 0; b < a && b < p[e]; b++) {
+                        var g = p[b];
+                        g && g.eventName == c && (f.listenerCompId = g.compId || h, (g = typeof g.handler == l ? g.handler : d[g.handler]) && g(f))
+                    } else d.JOT_delayedEvents.push({
+                        eventName: c,
+                        eventSrc: a,
+                        payload: b
+                    })
+            };
+            d.JOT_delayedEvents = [];
+            d.JOT_fullyLoaded = !1;
+            d.JOT_formatRelativeToNow = function(c, a) {
+                var b = ((new Date).getTime() - c) / 6E4;
+                if (1440 <= b || 0 > b) return null;
+                var f = 0;
+                60 <= b && (b /= 60, f = 2);
+                2 <= b && f++;
+                return a ? d.JOT_siteRelTimeStrs[f].replace(k, Math.floor(b)) : d.JOT_userRelTimeStrs[f].replace(k, Math.floor(b))
+            };
+        })()
+    </script>
+    <script>
+        var breadcrumbs = [{
+            "path": "/site/ieeevcip2015/program",
+            "deleted": false,
+            "title": "Tutorials",
+            "dir": "ltr"
+        }];
+        var JOT_clearDotPath = '../ssl.gstatic.com/sites/p/b9df9c/system/app/images/cleardot.gif';
+
+
+        var JOT_userRelTimeStrs = ["a minute ago", "__duration__ minutes ago", "an hour ago", "__duration__ hours ago"];
+
+
+
+
+        var webspace = {
+            "enableAnalytics": false,
+            "pageSharingId": "jotspot_page",
+            "enableUniversalAnalytics": false,
+            "sharingPolicy": "OPENED",
+            "siteTitle": "IEEE VCIP 2015",
+            "isStartPageEnabled": false,
+            "adsensePublisherId": null,
+            "features": {
+                "languageSelectDefaultTextSetToDefault": true,
+                "copySiteProgressUpdates": true,
+                "siteNoticeUrl": true,
+                "moreMobileStyleImprovements": true,
+                "asyncPermanentDelete": true,
+                "newMyMapsEmbeds": true,
+                "analyticsTrackingForCorp": false,
+                "htmlEmbed": true,
+                "asyncPageKeyFix": true,
+                "driveImageLinkFromOnepick": true,
+                "domainAnalyticsInGAOnly": true,
+                "docosHideNotificationSettings": true,
+                "siteMapBottomPaginationButtonsFix": true,
+                "fileCabinetScreenReaderFix": true,
+                "useGapiIframesForOnePick": true,
+                "updatedTosAndPrivacyLinks": null,
+                "freebirdFormEmbedDocTypeFix": true,
+                "betterErrorMessagingOnPageDeletion": false,
+                "pageDrafts": false,
+                "mobileOrientationFix": true,
+                "plusBadge": false,
+                "fileCabinetExpandCollapseSpaceBarFix": false,
+                "pdfEmbedSupport": false,
+                "jsClickFix": true
+            },
+            "isPublic": true,
+            "isConsumer": true,
+            "serverFlags": {
+                "cajaBaseUrl": "//www.gstatic.com/caja",
+                "cajaDebugMode": false
+            },
+            "onepickBaseUrl": "https://docs.google.com",
+            "domainAnalyticsAccountId": "",
+            "plusPageId": "",
+            "signInUrl": "https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/site/ieeevcip2015/program\u0026service\u003djotspot",
+            "analyticsAccountId": "",
+            "scottyUrl": "/_/upload",
+            "homePath": "/",
+            "siteNoticeUrlEnabled": null,
+            "plusPageUrl": "",
+            "adsensePromoClickedOrSiteIneligible": true,
+            "csiReportUri": "https://gg.google.com/csi",
+            "sharingId": "jotspot",
+            "termsUrl": "//www.google.com/intl/en/policies/terms/",
+            "gvizVersion": 1,
+            "editorResources": {
+                "sitelayout": ["https://ssl.gstatic.com/sites/p/b9df9c/system/app/css/sitelayouteditor.css"],
+                "text": ["https://ssl.gstatic.com/sites/p/b9df9c/system/js/codemirror.js", "ssl.gstatic.com/sites/p/b9df9c/system/app/css/codemirror_css.css", "ssl.gstatic.com/sites/p/b9df9c/system/js/trog_edit__en.js", "ssl.gstatic.com/sites/p/b9df9c/system/app/css/trogedit.css", "_/system/app/css/editor.css", "ssl.gstatic.com/sites/p/b9df9c/system/app/css/codeeditor.css", "/site/ieeevcip2015/_/system/app/css/camelot/editor-jfk.css"]
+            },
+            "sharingUrlPrefix": "/_/sharing",
+            "isAdsenseEnabled": true,
+            "domain": "defaultdomain",
+            "baseUri": "/site/ieeevcip2015",
+            "name": "ieeevcip2015",
+            "siteTemplateId": false,
+            "siteNoticeRevision": null,
+            "siteNoticeUrlAddress": null,
+            "siteNoticeMessage": null,
+            "page": {
+                "isRtlLocale": false,
+                "canDeleteWebspace": null,
+                "isPageDraft": null,
+                "parentPath": null,
+                "parentWuid": null,
+                "siteLocale": "en",
+                "timeZone": "America/Los_Angeles",
+                "type": "text",
+                "title": "Tutorials",
+                "locale": "en",
+                "wuid": "wuid:gx:7675b46da67b101d",
+                "revision": 12,
+                "path": "/program",
+                "isSiteRtlLocale": false,
+                "pageInheritsPermissions": null,
+                "name": "program",
+                "canChangePath": true,
+                "state": "",
+                "properties": {},
+                "bidiEnabled": false,
+                "currentTemplate": {
+                    "path": "/config/pagetemplates/standardpage",
+                    "title": "StandardPage"
+                }
+            },
+            "canPublishScriptToAnyone": true,
+            "user": {
+                "keyboardShortcuts": true,
+                "sessionIndex": "",
+                "guest_": true,
+                "displayNameOrEmail": "guest",
+                "userName": "guest",
+                "uid": "",
+                "renderMobile": false,
+                "domain": "",
+                "namespace": "",
+                "hasWriteAccess": false,
+                "namespaceUser": false,
+                "primaryEmail": "guest",
+                "dasherUser": false,
+                "hasAdminAccess": false
+            },
+            "gadgets": {
+                "baseUri": "/site/ieeevcip2015/system/app/pages/gadgets"
+            }
+        };
+        webspace.page.breadcrumbs = breadcrumbs;
+
+
+
+        var JOT_siteRelTimeStrs = ["a minute ago", "__duration__ minutes ago", "an hour ago", "__duration__ hours ago"];
+    </script>
+    <script type="text/javascript">
+        window.jstiming.load.tick('scl');
+    </script>
+    <meta name="title" content="Tutorials - IEEE VCIP 2015" />
+    <meta itemprop="name" content="Tutorials - IEEE VCIP 2015" />
+    <meta property="og:title" content="Tutorials - IEEE VCIP 2015" />
+    <style type="text/css">
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: italic;
+            font-weight: 700;
+            src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(http://fonts.gstatic.com/s/opensans/v10/PRmiXeptR36kaC0GEAetxp_TkvowlIOtbR7ePgFOpF4.ttf) format('truetype');
+        }
+        
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v10/cJZKeOuBrn4kERxqtaUH3aCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+        }
+        
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://fonts.gstatic.com/s/opensans/v10/k3k702ZOKiLJc3WVjuplzInF5uFdDttMLvmWuJdhhgs.ttf) format('truetype');
+        }
+        
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: italic;
+            font-weight: 400;
+            src: local('Open Sans Italic'), local('OpenSans-Italic'), url(http://fonts.gstatic.com/s/opensans/v10/xjAJXh38I15wypJXxuGMBp0EAVxt0G0biEntp43Qt6E.ttf) format('truetype');
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="../ssl.gstatic.com/sites/p/b9df9c/system/app/themes/ski/standard-css-ski-ltr-ltr.css" />
+    <link rel="stylesheet" type="text/css" href="../_/system/app/css/overlaya6d0.css?cb=ski42a1024px300160goog-ws-leftnone30bottomcenter" />
+    <link rel="stylesheet" type="text/css" href="../_/system/app/css/camelot/allthemes-view.css" />
+    <!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/site/ieeevcip2015/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+    <title>Tutorials - IEEE VCIP 2015</title>
+    <script type="text/javascript">
+        window.jstiming.load.tick('cl');
+    </script>
+</head>
+
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+    <div id="sites-page-toolbar" class="sites-header-divider">
+        <div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;">
+            <div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div>
+        </div>
+    </div>
+    <div id="sites-chrome-everything-scrollbar">
+        <div id="sites-chrome-everything" class="">
+            <div id="sites-chrome-page-wrapper" style="direction: ltr">
+                <div id="sites-chrome-page-wrapper-inside">
+                    <div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="">
+                        <table id="sites-chrome-header" class="sites-layout-hbox-centered" cellspacing="0" style="">
+                            <tr class="sites-header-primary-row" id="sites-chrome-userheader">
+                                <td id="sites-header-title" class="sites-header-title-centered sites-chrome-header-valign-bottom" role="banner" style="height: 300px">
+                                    <div class="sites-header-cell-buffer-wrapper">
+                                        <h2></h2></div>
+                                </td>
+                            </tr>
+                            <tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+                                <td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="sites-chrome-main-wrapper">
+                        <div id="sites-chrome-main-wrapper-inside">
+                            <table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+                                <tr>
+                                    <td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:160px">
+                                        <div xmlns="http://www.w3.org/1999/xhtml" id="COMP_2bd" class="sites-embed" role="navigation">
+                                            <div class="sites-embed-content sites-sidebar-nav">
+                                                <ul role="navigation" jotId="navList" class="has-expander">
+                                                    <li class="topLevel nav-first ">
+                                                        <div dir="ltr" style="padding-left: 19px;"><a href="../home.html" jotId="wuid:gx:1d135b2208341774" class="sites-navigation-link topLevel">Home</a></div>
+                                                    </li>
+                                                    <li class="topLevel parent " wuid="gx:1af4ef11c450abd3">
+                                                        <div dir="ltr" style="padding-left: 0px;">
+                                                            <div class="expander"></div><a href="../call-for-submissions.html" jotId="wuid:gx:1af4ef11c450abd3" class="sites-navigation-link topLevel">Submissions</a></div>
+                                                        <ul role="navigation" class="has-expander">
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="../call-for-submissions/regular-papers.html" jotId="wuid:gx:5f3636e1532cb48" class="sites-navigation-link">Call for Papers</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="../call-for-submissions/special-sessions.html" jotId="wuid:gx:42784d781fa493f1" class="sites-navigation-link">Call for Special Sessions</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="../call-for-submissions/demos.html" jotId="wuid:gx:5f95862c4febfc71" class="sites-navigation-link">Call for Demos</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="../call-for-submissions/tutorials.html" jotId="wuid:gx:153cf8bea37237ef" class="sites-navigation-link">Call for Tutorials</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="../authors/author-guidelines.html" jotId="wuid:gx:373e61c82ce8ce92" class="sites-navigation-link">Author Guidelines</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="../authors/paper-submission.html" jotId="wuid:gx:41fc1951a964d1f2" class="sites-navigation-link">Paper Submission</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;">
+                                                                    <a href="../authors/camera-ready.html" jotid="wuid:gx:61c8ae5c171eb27e" class="sites-navigation-link">Camera Ready</a>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="topLevel parent " wuid="gx:2f23f595b3bac47f">
+                                                        <div dir="ltr" style="padding-left: 0px;">
+                                                            <div class="expander"></div><a href="../website-builder.html" jotId="wuid:gx:2f23f595b3bac47f" class="sites-navigation-link topLevel">Venue</a></div>
+                                                        <ul role="navigation" class="has-expander">
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="../website-builder/conference-venue.html" jotId="wuid:gx:545bce5b79eae923" class="sites-navigation-link">Conference Venue</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="../website-builder/accommodation.html" jotId="wuid:gx:bea7fb5c04954db" class="sites-navigation-link">Accommodation</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="../website-builder/about-singpaore.html" jotId="wuid:gx:545bce5b79eae923" class="sites-navigation-link">Local Information</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="../website-builder/travel-visa.html" jotId="wuid:gx:3dcd6f9fb67497ad" class="sites-navigation-link">Travel &amp; Visa</a></div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="topLevel parent " wuid="gx:7675b46da67b101d">
+                                                        <div jotid="wuid:gx:7675b46da67b101d" dir="ltr" style="padding-left: 0px;">
+                                                            <div class="expander"></div>
+                                                            <a href="../program.html" jotid="wuid:gx:7675b46da67b101d" class="sites-navigation-link topLevel">Program</a>
+                                                        </div>
+                                                        <ul role="navigation" class="has-expander">
+                                                            <li class="">
+                                                                <div jotid="wuid:gx:5d8236fc5864f372" dir="ltr" style="padding-left: 38px;">
+                                                                    <a href="at-a-glance.html" class="sites-navigation-link">At-A-Glance</a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;">
+                                                                    <a href="keynote-speakers.html" jotid="wuid:gx:500080fce84d09b4" class="sites-navigation-link">Keynotes</a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div class="current-bg" dir="ltr" style="padding-left: 38px;">
+                                                                    Tutorials
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="topLevel ">
+                                                        <div dir="ltr" style="padding-left: 19px;"><a href="../registration.html" jotId="wuid:gx:635ceedf3f1fef99" class="sites-navigation-link topLevel">Registration</a></div>
+                                                    </li>
+                                                    <li class="topLevel ">
+                                                        <div dir="ltr" style="padding-left: 19px;"><a href="../important-dates.html" jotId="wuid:gx:47df0f69238fe487" class="sites-navigation-link topLevel">Important Dates</a></div>
+                                                    </li>
+                                                    <li class="topLevel parent ">
+                                                        <div dir="ltr" style="padding-left: 0px;">
+                                                            <div class="expander"></div><a href="../Organizing-Committee.html" class="sites-navigation-link topLevel">Committees</a></div>
+                                                        <ul role="navigation" class="has-expander">
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="../Organizing-Committee.html" jotId="wuid:gx:ae7463c7afb56f0" class="sites-navigation-link">Organizing Committee</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="../area-chairs.html" class="sites-navigation-link">Area Chairs</a></div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="topLevel ">
+                                                        <div dir="ltr" style="padding-left: 19px;"><a href="../sponsors.html" jotId="wuid:gx:4d72d496ea350529" class="sites-navigation-link topLevel">Sponsors</a></div>
+                                                    </li>
+                                                    <li class="topLevel ">
+                                                        <div dir="ltr" style="padding-left: 19px;"><a href="../contact-us.html" jotId="wuid:gx:28e35145a03b1a2f" class="sites-navigation-link topLevel">Contact Us</a></div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- <div xmlns="http://www.w3.org/1999/xhtml" class="sites-embed-align-left-wrapping-off" id="COMP_6676803415175527" role="complementary"><div class="sites-embed-border-on sites-embed sites-embed-full-width" style="width:100%;"><div class="sites-embed-content sites-embed-type-countdown"><div aria-label="60 days until Paper Submissions Due" class="sites-embed-countdown sites-embed-countdown-fromdateutc-2015-5-15"><span jotid="content"><p style="text-align: center"><strong aria-hidden="true" class="sites-embed-countdown-daysapart" id="countdown_paper_dig" >60</strong>
+                                <span id="countdown_paper_text" aria-hidden="true">days until</span>
+                                <br aria-hidden="true" /> <strong aria-hidden="true">Paper Submissions Due</strong>
+                              </p>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div> -->
+                                        <div xmlns="http://www.w3.org/1999/xhtml" class="sites-embed-align-left-wrapping-off" id="COMP_7353365833405405" role="complementary">
+                                            <div class="sites-embed-border-on sites-embed sites-embed-full-width" style="width:100%;">
+                                                <div class="sites-embed-content sites-embed-type-countdown">
+                                                    <div aria-label="272 days until Conference Days" class="sites-embed-countdown sites-embed-countdown-fromdateutc-2015-12-13">
+                                                        <span jotid="content">
+                              <p style="text-align: center">
+                                <strong aria-hidden="true" class="sites-embed-countdown-daysapart"id="countdown_event_dig" >272</strong>
+                                <span id="countdown_event_text" aria-hidden="true">days until</span>
+                                                        <br aria-hidden="true" /><strong aria-hidden="true">Conference Days</strong></p>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td id="sites-canvas-wrapper">
+                                        <div id="sites-canvas" role="main">
+                                            <div id="sites-canvas-main" class="sites-canvas-main">
+                                                <div id="sites-canvas-main-content">
+                                                    <div xmlns="http://www.w3.org/1999/xhtml" class="sites-layout-name-one-column-hf sites-layout-vbox">
+                                                        <div class="sites-layout-tile sites-tile-name-header">
+                                                            <div dir="ltr">
+                                                                <a name="TutorialTop"></a>
+                                                                <div><span style="line-height:24px;background-color:transparent"><font color="#444444" size="6">Tutorials</font></span></div>
+                                                                <div style="text-align:justify"><b style="color:rgb(68,68,68);font-size:medium;line-height:24px;text-align:left"><br>
+                                                    </b></div>
+                                                                <div style="text-align:justify"><span style="line-height:25.2000007629395px;text-align:left;background-color:transparent">Four half-day tutorials will be held on Sunday, 13 December 2015 and offered free of charge to all VCIP 2015 participants. &nbsp;</span></div>
+                                                                <div style="text-align:justify"><span style="line-height:25.2000007629395px;text-align:left;background-color:transparent"><br>
+                                                    </span></div>
+                                                                <div style="text-align:justify"><b style="text-align:left;line-height:1.5;background-color:transparent"><span style="line-height:25.2000007629395px">Morning Tutorials (09:00 – 12:00, Sunday, 13 December 2015)</span></b></div>
+                                                                <div style="text-align:justify"><font color="#3d85c6"><a href="#TutorialTA1"><span style="text-align:left;line-height:1.5;background-color:transparent"><font size="3"><span style="line-height:normal">TA1: &nbsp;</span></font></span><span style="text-align:left;font-size:medium;line-height:normal;background-color:transparent">High Efficiency Video Coding – Coding Tools and Specification: HEVC Version 2 and&nbsp;</span><span style="text-align:left;font-size:medium;line-height:normal;background-color:transparent">Beyond</span><span style="text-align:left;background-color:transparent"><br>
+                                                    </span></a><a href="#TutorialTA2"><span style="text-align:left;line-height:normal;font-size:medium;background-color:transparent">TA2: &nbsp;</span><span style="text-align:left;line-height:1.5;background-color:transparent"><font size="3"><span style="line-height:normal">Regularities of Visual Data and Their Applications</span></font></span></a></font>
+                                                                </div>
+                                                                <div style="text-align:justify"><span style="text-align:left;line-height:1.5;background-color:transparent"><font color="#222222" size="3"><span style="line-height:normal"><br>
+                                                    </span></font>
+                                                                    </span>
+                                                                </div>
+                                                                <div style="text-align:justify"><span style="text-align:left;background-color:transparent"><b><span style="line-height:25.2000007629395px">Afternoon Tutorials (14:00 – 17:00,&nbsp;</span></b>
+                                                                    </span><b style="text-align:left;line-height:1.5;background-color:transparent"><span style="line-height:25.2000007629395px">Sunday, 13 December 2015</span></b><b style="text-align:left;line-height:1.5;background-color:transparent"><span style="line-height:25.2000007629395px">)</span></b></div>
+                                                                <div style="text-align:justify"><font color="#3d85c6"><a href="#TutorialTP1"><span style="text-align:left;line-height:1.5;background-color:transparent"><font size="3"><span style="line-height:normal">TP1: &nbsp;</span></font></span><font size="3" style="text-align:left;background-color:transparent"><span style="line-height:normal">HEVC Screen Content Coding (SCC) – Standardization and Technologies</span></font></a>
+                                                                    <br>
+                                                                    <a href="#TutorialTP2"><span style="text-align:left;line-height:normal;font-size:medium;background-color:transparent">TP2: &nbsp;</span><font size="3" style="text-align:left;background-color:transparent"><span style="line-height:normal">Cloud Communications for Highly Interactive Multimedia Communications</span></font></a></font>
+                                                                </div>
+                                                                <div style="text-align:justify">
+                                                                    <br>
+                                                                </div>
+                                                                <a name="TutorialTA1"> </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="sites-layout-tile sites-tile-name-content-1">
+                                                            <div dir="ltr">
+                                                                <div style="margin-bottom:20px;border:1px solid rgb(221,221,221);border-radius:4px;box-shadow:rgba(0,0,0,0.0470588) 0px 1px 1px">
+                                                                    <div style="padding:10px 15px;border-bottom-width:1px;border-bottom-style:solid;border-color:rgb(221,221,221);border-top-left-radius:3px;border-top-right-radius:3px;background-color:rgb(245,245,245)">
+                                                                        <p style="text-align:left;margin-top:0px;margin-bottom:0px"><font color="#3d85c6"><font size="3"><font><span style="line-height:25px">TA1: &nbsp; &nbsp; &nbsp; &nbsp; </span></font></font><font size="3"><span style="line-height:25px">High Efficiency Video Coding – Coding Tools and Specification: HEVC Version 2&nbsp;</span></font><span style="line-height:25px;font-size:medium">and <br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Beyond</span><span style="font-size:medium;line-height:25px"><br>
+                                                    </span><font size="3"><span style="line-height:25px">Speaker:&nbsp;</span></font><font size="3"><span style="line-height:25px">Mathias Wien, RWTH Aachen University, Germany</span></font></font>
+                                                                        </p>
+                                                                        <p style="text-align:left;margin-top:0px;margin-bottom:0px"><font color="#3d85c6"><font size="3"><span style="line-height:25px"><span style="font-size:14px;line-height:21px"><span style="font-size:medium;line-height:25px">Time: &nbsp; &nbsp; &nbsp; </span><span style="font-size:medium;line-height:25px">09:00-12:00</span></span></span></font></font>
+                                                                        </p>
+                                                                    </div>
+                                                                    <div style="padding:15px">
+                                                                        <div style="font-family:Open Sans;line-height:21px;text-align:justify"><span style="font-family:Helvetica Neue,Helvetica,Arial,sans-serif;line-height:20px;text-align:left;background-color:transparent"><b><font color="#3d85c6">Abstract: &nbsp;&nbsp;</font></b></span></div>
+                                                                        <div style="color:rgb(97,97,97);font-family:Open Sans;line-height:21px;text-align:justify"><span style="background-color:transparent">The tutorial covers the complete HEVC standard, including the so-far adopted as well as arising extensions (range extensions, scalability, multi-view, 3D video coding, and screen content coding).&nbsp;</span><span style="background-color:transparent">The standard is assessed from various perspectives, including an algorithmic view on the video coding layer as well as a high-level / system-layer view on the network abstraction layer and the overall structure. The discussion includes a detailed treatment of the HEVC layer concept which allows for seamless incorporation of spatial and quality scalability as well as multi-view and 3D extensions. The provision of this flexible concept has been adopted already in Version 1 of HEVC. It now reveals its full benefit in the definition of the mentioned extensions.&nbsp;</span></div>
+                                                                        <div style="color:rgb(97,97,97);font-family:Open Sans;line-height:21px;text-align:justify"><span style="background-color:transparent"><br>
+                                                    </span></div>
+                                                                        <div style="color:rgb(97,97,97);font-family:Open Sans;line-height:21px;text-align:justify">The essential concepts and the coding tools comprised in each of the extensions are detailed and explained in the context of their respective application space. The tutorial further discusses the basic structure of specification text from a more abstract point of view as well as by concrete example in HEVC. For all mentioned perspectives, the tutorial develops the topic in a step-by-step fashion and gradually introduces concepts, algorithms, and terminology. Examples are provided at all levels of the presentation illustrating the concepts and deepening the understanding of the presented technology.&nbsp;</div>
+                                                                        <div style="color:rgb(97,97,97);font-family:Open Sans;line-height:21px;text-align:justify">
+                                                                            <br>
+                                                                        </div>
+                                                                        <div style="color:rgb(97,97,97);font-family:Open Sans;line-height:21px;text-align:justify">The tutorial shall enable the participants to understand the design principles and concepts behind the specification of HEVC. They shall recognize and understand the innovation of HEVC compared to the previous standards (esp. H.264/AVC) and regard the extensible nature of the specification design. The tutorial shall educate the participants to further explore related knowledge resources and, specifically, the specification text itself.&nbsp;</div>
+                                                                        <div style="text-align:justify">
+                                                                            <br>
+                                                                        </div>
+                                                                        <div style="text-align:justify"><b><font color="#3d85c6">Speaker's Biography</font></b></div>
+                                                                        <div style="text-align:justify"><span style="text-align:left;background-color:transparent"><b>Mathias Wien</b> received the Diploma and Dr.-Ing. degrees from Rheinisch-Westfälische Technische Hochschule Aachen (RWTH Aachen University), Aachen, Germany, in 1997 and 2004, respectively. From 1997 to 2004, he was a researcher with Institut für Nachrichtentechnik, RWTH Aachen University (head: Prof. Jens-Rainer Ohm). He currently works as a senior research scientist and the head of administration on a permanent position at the same institute. His research interests include image and video processing, space-frequency adaptive and scalable video compression, and robust video transmission. Mathias has been an active contributor to HEVC version 1. He has participated and contribute to ITU-T VCEG, ISO/IEC MPEG, the Joint Video Team, and the Joint Collaborative Team on Video Coding (JCT-VC) of VCEG and ISO/IEC MPEG. He has co-authored a proposal for 3D video coding in JCT-3V and has contributed to the standardization phase of the scalable extension for HEVC. He has previously contributed to H.264/AVC and has served as a co-editor of the SVC amendment to H.264/AVC. In the aforementioned standardization bodies, he has co-chaired and coordinated several AdHoc groups as well as tool- and core experiments. Mathias has published various scientific articles and conference papers in the area of video coding and has co-authored several patents in this area. Mathias has further authored and co-authored more than 200 standardization documents. He has published the Springer textbook “High Efficiency Video Coding: Coding Tools and Specification”, which fully covers Version 1 of HEVC. An extended edition covering Version 2 (range extensions, scalable extension and multi-view coding) as well as the following extensions (3D video coding, screen content coding) is planned to be published in 2016.</span></div>
+                                                                        <div style="text-align:justify"><span style="text-align:left;background-color:transparent">&nbsp;&nbsp; &nbsp;</span></div>
+                                                                        <div style="text-align:justify"><span style="text-align:left;background-color:transparent">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;</span><a name="TutorialTA2" style="text-align:left;line-height:1.5;background-color:transparent"><b><font color="#3d85c6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</font></b></a><b><font color="#3d85c6"><a href="#TutorialTop">Back to the Top ▲</a></font></b></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div style="margin-bottom:20px;border:1px solid rgb(221,221,221);border-radius:4px;box-shadow:rgba(0,0,0,0.0470588) 0px 1px 1px">
+                                                                    <div style="padding:10px 15px;border-bottom-width:1px;border-bottom-style:solid;border-color:rgb(221,221,221);border-top-left-radius:3px;border-top-right-radius:3px;background-color:rgb(245,245,245)">
+                                                                        <p style="text-align:left;margin-top:0px;margin-bottom:0px"><font color="#3d85c6"><font size="3"><font><span style="line-height:25px">TA2:&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</span></font></font><font size="3"><span style="line-height:25px">Regularities of Visual Data and Their Applications</span></font><span style="font-size:medium;line-height:18px"><br>
+                                                    </span><font size="3"><span style="line-height:25px">Speakers: </span></font><font size="3"><span style="line-height:18px">Shenghua Gao, ShanghaiTech University, China<br>
+                                                    </span></font><span style="line-height:25px;font-size:medium">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Kui Jia, Advanced Digital Sciences Center, Singapore<br>
+                                                    </span><span style="line-height:25px;font-size:medium">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Tianzhu Zhang, Chinese Academy of Sciences, China<br>
+                                                    </span><span style="line-height:25px"><font size="3">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Weisheng Dong, Xidian University, China</font></span></font>
+                                                                        </p>
+                                                                        <p style="text-align:left;margin-top:0px;margin-bottom:0px"><font color="#3d85c6"><span style="font-size:medium;line-height:25px">Time: &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><span style="font-size:medium;line-height:25px">09:00-12:00</span></font></p>
+                                                                    </div>
+                                                                    <div style="padding:15px">
+                                                                        <div style="color:rgb(97,97,97);font-family:Open Sans;line-height:21px;text-align:justify">
+                                                                            <div><b style="font-family:Helvetica Neue,Helvetica,Arial,sans-serif;line-height:20px;text-align:left"><font color="#3d85c6">Abstract: &nbsp;&nbsp;</font></b></div>
+                                                                            <div>This tutorial aims to present the very recent breakthroughs in discovering of high dimensional data structure and their applications in computer vision and image processing research. These results are achieved by leveraging new powerful, more advanced sparse representation models and by developing efficient large-scale optimization algorithms.</div>
+                                                                            <div>
+                                                                                <br>
+                                                                            </div>
+                                                                            <div>The tutorial will start with introducing the methods for modeling the regularities of visual data in computer vision, including the basic theory of sparse/low-rank recovery, with its generalization to more advanced sparse models which considers other structures of the data. &nbsp; We introduce these concepts in the context of signal processing and from the perspectives of geometric intuition, formal definition, and recovery conditions, with motivating applications. Following introduction of basic theory, we present choices of algorithms that can better cope with the issues of non-smoothness and scale, commonly occurring in the large-scale optimization problems of sparsity/low-rank models. Intrinsic low-dimensional structures are among the most fundamental phenomena in natural images due to rich local regularities, global symmetries, repetitive textures, or redundant sampling. This tutorial will continue with presenting the very recent breakthroughs in image processing. These results are essentially obtained by properly harnessing these rich low-dimensional structures prevailing in natural images, using carefully designed more advanced models with sparsity/low-rank constriants, for various low-level vision tasks. We will specially show that how local sparsity/low-rank models and non-local self-similarity of natural images are exploited to achieve these breakthrough results. Intrinsic low-dimensional structures are not limited to low-level image processing. High-level semantic concepts, which may be hidden in massive high-dimensional and less organized visual data, can also be discovered by learning low-dimensional invariant representations of the concepts of interest. In the third session of this tutorial, we will present striking results recently obtained in computer vision research. We cover a variety of mainstream vision applications ranging from face/object recognition, object alignment, feature correspondence/matching, tracking, to unsupervised object discovery and ambiguous learning. In the fourth part, we will also discuss how to leverage the regularities of visual data for video tracking tasks.</div>
+                                                                            <div>
+                                                                                <br>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div style="text-align:justify"><b><font color="#3d85c6">Speakers' Biographies:</font></b></div>
+                                                                        <div style="text-align:justify"><span style="text-align:left;line-height:1.5;background-color:transparent"><b>Shenghua Gao</b> is an assistant professor in ShanghaiTech University, China. He received the B.E. degree from the University of Science and Technology of China in 2008 (outstanding graduates), and received the Ph.D. degree from the Nanyang Technological University in 2012. From Jun 2012 to Aug 2014, he worked as a research scientist in Advanced Digital Sciences Center, Singapore. His research interests include computer vision and machine learning. He has published more than 20 papers on object and face recognition related topics in many international conferences and journals, including IEEE T-PAMI,IJCV, IEEE TIP, IEEE TNNLS, IEEE TMM, IEEE TCSVT, CVPR, ECCV, etc.). He was awarded the Microsoft Research Fellowship in 2010, and ACM Shanghai Young Research Scientist Award in 2015.&nbsp;</span></div>
+                                                                        <div style="text-align:justify"><span style="text-align:left;background-color:transparent"><br>
+                                                    </span></div>
+                                                                        <div style="text-align:justify"><span style="text-align:left;background-color:transparent"><b>Kui Jia</b> received his B.Eng. degree in marine engineering from Northwestern Polytechnic University, China, in 2001; his M.Eng. degree in electrical and computer engineering from National University of Singapore in 2003; and his Ph.D. degree in computer science from Queen Mary University of London, London, U.K., in 2007. He is currently a Visiting Assistant Professor at University of Macau, Macau SAR, China. He also holds a Research Scientist position at Advanced Digital Sciences Center, Singapore. His research interests are in computer vision, machine learning, and image processing.&nbsp;</span></div>
+                                                                        <div style="text-align:justify"><span style="text-align:left;background-color:transparent"><br>
+                                                    </span></div>
+                                                                        <div style="text-align:justify"><span style="text-align:left;background-color:transparent"><b>Tianzhu Zhang</b> is an associate professor at the National Laboratory of Pattern Recognition, Institute of Automation, Chinese Academy of Sciences in Beijing, China. He received his B.S. degree in communications and information technology from Beijing Institute of Technology in 2006. He obtained his Ph.D. in pattern recognition and intelligent systems from Institute of Automation, Chinese Academy of Sciences, in 2011. After graduation, he worked at Advanced Digital Sciences Center of Singapore. His research interests are in computer vision and multimedia, including action recognition, object classification and object tracking.&nbsp;</span></div>
+                                                                        <div style="text-align:justify"><span style="text-align:left;background-color:transparent"><br>
+                                                    </span></div>
+                                                                        <div style="text-align:justify"><span style="text-align:left;background-color:transparent"><b>Weisheng Dong</b> received the B. S degree in communication engineering from Huazhong University of science and technology, Wuhan, China in 2004 and the Ph. D. degree in circuit and systems from Xidian University, Xi’an, China in 2010. From Jan. 2009 to Jun. 2010, he was a research assistant / associate with Dep. of Computing, the Hong Kong Polytechnic University, Hong Kong. From Aug. 2012 to Feb. 2013 he was a visiting researcher with Microsoft Research Asia. In Sep. 2010 he joined the school of electronic engineering, Xidian University as a Lecturer, and has been an associate professor since Jun. 2012. His research interests include inverse problems in image processing, sparse representation, and image compression. He was the recipient of the best paper award at SPIE VCIP 2010.</span></div>
+                                                                        <div style="text-align:justify"><a name="TutorialTP1" style="line-height:1.5;text-align:left;background-color:transparent">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</a><a href="#TutorialTop"><span style="text-align:left;line-height:1.5;background-color:transparent"><font color="#6fa8dc">&nbsp;</font><b>&nbsp;<font color="#3d85c6">Back to the Top ▲</font></b></span></a></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div style="margin-bottom:20px;border:1px solid rgb(221,221,221);border-radius:4px;box-shadow:rgba(0,0,0,0.0470588) 0px 1px 1px">
+                                                                    <div style="padding:10px 15px;border-bottom-width:1px;border-bottom-style:solid;border-color:rgb(221,221,221);border-top-left-radius:3px;border-top-right-radius:3px;background-color:rgb(245,245,245)">
+                                                                        <p style="text-align:left;margin-top:0px;margin-bottom:0px"><font color="#3d85c6"><font size="3"><font><span style="line-height:25px">TP1:&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; </span></font></font><font size="3"><span style="line-height:25px">HEVC Screen Content Coding (SCC) – Standardization and Technologies&nbsp;&nbsp;</span></font><span style="font-size:medium;line-height:18px"><br>
+                                                    </span><font size="3"><span style="line-height:25px">Speakers: </span></font><font size="3"><span style="line-height:18px">Ji-Zheng Xu, Microsoft Research Asia, China</span><br>
+                                                    <span style="line-height:25px">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Wen-Hsiao Peng, National Chiao Tung University, Taiwan</span></font>
+                                                                            <br>
+                                                                            </font>
+                                                                        </p>
+                                                                        <p style="text-align:left;margin-top:0px;margin-bottom:0px"><font color="#3d85c6"><span style="font-size:medium;line-height:25px">Time: &nbsp; &nbsp; &nbsp; &nbsp;14</span><span style="font-size:medium;line-height:25px">:00-17:00</span></font></p>
+                                                                    </div>
+                                                                    <div style="padding:15px">
+                                                                        <div style="text-align:justify">
+                                                                            <div style="color:rgb(97,97,97);font-family:Open Sans;line-height:21px"><b style="font-family:Helvetica Neue,Helvetica,Arial,sans-serif;line-height:20px;text-align:left"><font color="#3d85c6">Abstract: &nbsp;&nbsp;</font></b></div>
+                                                                            <div>Nowadays, more and more visual information is rendered from a computer or an electronic device rather than a camera. Such type of visual information, which can be in the form of either images or video, is often referred to as screen content. Many emerging applications—e.g. wireless projector, remote desktop, cloud gaming, remote diagnoses and remote education—call for efficient processing and transmission of such content. Recognizing the demand for an industry standard for coding of screen content, the ISO/IEC Moving Picture Experts Group and ITU-T Video Coding Experts Group have since January 2014 been developing new extensions for HEVC, with the aim of enhancing significantly its capability of coding screen content. This tutorial is to provide a timely introduction to the core technologies in this new standard and its applications. Specifically, it will cover (1) an overview of SCC standardization activities for HEVC and its extensions, (2) the challenges and issues in designing SCC algorithms, (3) the core technologies--such as transform-skip, intra block copy, palette mode, hash-based search, and adaptive color transform--that are currently in the draft standard or are being studied for potential inclusion, as well as (4) the recent implementations of SCC systems/applications.</div>
+                                                                            <div style="color:rgb(97,97,97);font-family:Open Sans;line-height:21px">
+                                                                                <br>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div style="text-align:justify"><b><font color="#3d85c6">Speakers' Biographies:</font></b></div>
+                                                                        <div style="text-align:justify"><span style="text-align:left;background-color:transparent"><b>Ji-Zheng Xu</b></span><span style="text-align:left;background-color:transparent">&nbsp;received the B.S. and M. S. degrees in computer science from the University of Science and Technology of China (USTC), and the Ph.D. degree in electrical engineering from Shanghai Jiaotong University, China. He joined Microsoft Research Asia (MSRA) in 2003 and currently he is a Lead Researcher. His research interests include image and video representation, media compression, and communication. He has been an active contributor to ISO/MPEG and ITU-T video coding standards. He has over 40 technical proposals adopted by H.264/AVC, H.264/AVC scalable extension, High Efficiency Video Coding, HEVC range extension and HEVC screen content coding standards. He chaired and co-chaired the ad-hoc group of exploration on wavelet video coding in MPEG, and various technical ad-hoc groups in JCT-VC, e.g., on screen content coding, on parsing robustness, on lossless coding. He has authored and co-authored over 100 conference and journal refereed papers. He co-organized and co-chaired special sessions on scalable video coding, directional transform, high quality video coding at various conferences. He has over 30 U.S. patents granted or pending in image and video coding. He is also served as special session co-chair of IEEE International Conference on Multimedia and Expo 2014. He served as a Guest Editor for a special issue on Screen Content Video Coding and Applications for IEEE Journal on Emerging and Selected Topics in Circuits and Systems. He has been an IEEE senior member since 2010. &nbsp;</span></div>
+                                                                        <div style="text-align:justify"><span style="text-align:left;background-color:transparent"><br>
+                                                    </span></div>
+                                                                        <div style="text-align:justify"><span style="text-align:left;background-color:transparent"><b>Wen-Hsiao Peng </b>is an Associate Professor in the Computer Science Department of the National Chiao Tung University (NCTU), Taiwan. He is currently a Visiting Scholar at IBM Thomas J. Watson Research Center in New York, USA. He received his B.S., M.S., and Ph.D. degrees in Electronics Engineering from NCTU in 1997, 1999, and 2005, respectively. From 2000 to 2001, he was with the Intel Microprocessor Research Laboratory in Santa Clara, USA, where he worked on MPEG-4 ﬁne granularity scalability and demonstrated its application in 3-D, peer-to-peer video conferencing. Since 2003, he has actively participated in the International Organization for Standardization Moving Picture Expert Group (MPEG) digital video coding standardization process and contributed to the development of the High-Efficiency Video Coding (HEVC) standard and MPEG-4 Part 10 AVC Amd.3 Scalable Video Coding (SVC) standard. His research group at NCTU is one of the few university teams around the world that participated in the Call-for-Proposals on HEVC and its Screen Content Coding extensions. He has published 60+ technical papers in the ﬁeld of video/image processing and communications and 50+ standards contributions. His current research interests include high-efﬁciency video coding (HEVC), screen content coding (SCC), visual search and information retrieval, machine learning, etc. Dr. Peng is a Senior Member of the IEEE and a Technical Committee Member for the Visual Signal Processing and Communications (VSPC) and Multimedia Systems and Application (MSA) tracks for the IEEE Circuits and Systems Society. He organized several special sessions on HEVC and related topics in prestigious conferences and was a Technical Program Co-Chair for VCIP-2011. More recently, he served as a Guest Editor for a special issue on Screen Content Video Coding and Applications for IEEE Journal on Emerging and Selected Topics in Circuits and Systems.</span></div>
+                                                                        <div style="text-align:justify"><span style="text-align:left;background-color:transparent"><br>
+                                                    </span></div>
+                                                                        <div style="text-align:justify"><a name="TutorialTP2" style="line-height:1.5;text-align:left;background-color:transparent">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</a><a href="#TutorialTop"><font color="#6fa8dc">&nbsp;</font><b>&nbsp;<font color="#3d85c6">Back to the Top ▲</font></b></a></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div style="margin-bottom:20px;border:1px solid rgb(221,221,221);border-radius:4px;box-shadow:rgba(0,0,0,0.0470588) 0px 1px 1px">
+                                                                    <div style="padding:10px 15px;border-bottom-width:1px;border-bottom-style:solid;border-color:rgb(221,221,221);border-top-left-radius:3px;border-top-right-radius:3px;background-color:rgb(245,245,245)">
+                                                                        <p style="text-align:left;margin-top:0px;margin-bottom:0px"><font color="#3d85c6"><font size="3"><font><span style="line-height:25px">TP2: &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></font><span style="line-height:25px">Cloud Communications for Highly Interactive Multimedia Communications</span></font>
+                                                                            <br>
+                                                                            <font size="3"><span style="line-height:25px">Speaker: </span></font><font size="3"><span style="line-height:18px">Anil Fernando, University of Surrey, UK</span></font>
+                                                                            <br>
+                                                                            </font>
+                                                                        </p>
+                                                                        <p style="text-align:left;margin-top:0px;margin-bottom:0px"><font color="#3d85c6"><span style="font-size:medium;line-height:25px">Time: &nbsp; &nbsp; &nbsp; 14</span><span style="font-size:medium;line-height:25px">:00-17:00</span></font></p>
+                                                                    </div>
+                                                                    <div style="padding:15px">
+                                                                        <div style="text-align:justify">
+                                                                            <div style="color:rgb(97,97,97);font-family:Open Sans;line-height:21px"><b style="font-family:Helvetica Neue,Helvetica,Arial,sans-serif;line-height:20px;text-align:left"><font color="#3d85c6" name="keynote3">Abstract: &nbsp;&nbsp;</font></b></div>
+                                                                            <div><span style="background-color:transparent">Due to the emerge of various media resources available via high speed Internet connection, it is witnessed a media revolution with ever increasing quality expectations. According to CISCO by the end of 2015, Internet video will reach 62% of consumer Internet traffic and the number of all forms of video will be 90% approximately. In order to be responsive to the demands of what this revolution brings, mechanisms handling the needs for massive computing power, storage and bandwidth have to be addressed worldwide. The state-of-the-art systems consider the integration of cloud computing, media processing and delivery strategies all together forming media cloud to overcome such a challenge. In traditional content delivery mechanisms, there are two approaches which are client-server and peer-to-peer (P2P). In client-server approach, a server having the content distributes to all other clients. Although client-server approach is a convenient way for content delivery, it is insufficient in addressing time and bandwidth demands of live content delivery. In P2P transmission, media is shared by a number of peers either through a tree or mesh network model between peers and enable higher data transfer rate via parallel downloads. Although the transmission via P2P network increases the throughput and addresses the scalability issues of client-server model, the peers’ limited resources such as bandwidth and the unpredictability of the peers’ availability are the main concerns for the high quality media delivery. Besides, P2P is not well suited to synchronous delivery of live streams due to possible spread of peers around the world and their highly varying network conditions. To address the issues described above, Content delivery through Content Delivery Networks (CDN) has become popular among the traditional content delivery mechanisms due to the increase of users’ quality expectations. However, the increased demand for high quality media and the availability of network resources such as bandwidth have increased the quality expectations of end users. Due to this trend, CDN approach has become insufficient in addressing the intensive processing needs and fast transfer of high quality media especially in live streaming cases. In order to meet new challenges in media communications, Media Clouds can be considered for media by not only using cloud resources for storage and processing of the content but also for the delivery of the content. In this way Media Clouds provide a dynamic environment enabling optimization of available virtualized cloud resources in content processing and delivery jointly which are some of the key requirements for future interactive media applications. Therefore in this tutorial, attendees will have the opportunity to understand the state-of-the-art cloud communications architecture and the future cloud infrastructure requirements for interactive media communications. Tutorial will consider how clouds can help in future interactive media communication applications.</span></div>
+                                                                            <br>
+                                                                        </div>
+                                                                        <div style="text-align:justify"><b><font color="#3d85c6">Speaker's Biography:</font></b></div>
+                                                                        <div style="text-align:justify"><span style="text-align:left;background-color:transparent"><b>Anil Fernando </b>(SMIEEE) is leads the Video Communications group at the University of Surrey, UK. He has been working in video coding and communications since 1998 and has published more than 300 international refereed journal and proceeding papers in this area including a book on video communications. Furthermore, he has published more than 200 international refereed journal and conference papers in multimedia communications. He has contributed to several international (ROMEO, MUSCADE, DIOMEDES, VISNET, etc) projects and currently he is leading an interactive video communications project (ACTION-TV) funded by the European Union on Media communications. Recently he won the IEEE Chester Shall award sponsored by the IEEE Consumer Electronic Society for one of his work on 3D video communications. He has contributed many tutorials in leading IEEE conferences.</span></div>
+                                                                        <div style="text-align:justify"><span style="text-align:left;background-color:transparent"><br></span></div>
+                                                                        <div style="text-align:justify"><span style="line-height:1.5;text-align:left;background-color:transparent">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><a href="#TutorialTop"><span style="text-align:left;line-height:1.5;background-color:transparent"><font color="#6fa8dc">&nbsp;</font><b>&nbsp;<font color="#3d85c6">Back to the Top ▲</font></b></span></a></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="sites-layout-tile sites-tile-name-footer sites-layout-empty-tile">
+                                                            <div dir="ltr">
+                                                                <br>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="sites-canvas-bottom-panel">
+                                                <div id="sites-attachments-container">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="sites-chrome-footer-wrapper">
+                        <div id="sites-chrome-footer-wrapper-inside">
+                            <div id="sites-chrome-footer">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sites-chrome-onebar-footer">
+    </div>
+
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        window.jstiming.load.tick('sjl');
+    </script>
+    <script xmlns="http://www.w3.org/1999/xhtml" src="../ssl.gstatic.com/sites/p/b9df9c/system/js/jot_min_view__en.js"></script>
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        window.jstiming.load.tick('jl');
+    </script>
+
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+        JOT_setupNav("2bd", "Navigation", false);
+        JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_2bd');
+    </script>
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        setTimeout(function() {
+            var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+            gsites.Xhr.send('_/tz.html', null, null, 'GET', null, null, {
+                afjstz: fingerprint
+            });
+        }, 500);
+    </script>
+    <script xmlns="http://www.w3.org/1999/xhtml">
+        window.onload = function() {
+            if (false) {
+                JOT_setMobilePreview();
+            }
+            var loadTimer = window.jstiming.load;
+            loadTimer.tick("ol");
+            loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+            window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+        }
+    </script>
+
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+    </script>
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+            webspace, "en");
+        maestroRunner.initListeners();
+        maestroRunner.installEditRender();
+    </script>
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+        //<![CDATA[
+        // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+        if (webspace.user.hasWriteAccess) {
+            JOT_decorateButtons();
+        }
+
+        // Fires delayed events.
+        (function() {
+            JOT_fullyLoaded = true;
+            var delayedEvents = JOT_delayedEvents;
+            for (var x = 0; x < delayedEvents.length; x++) {
+                var event = delayedEvents[x];
+                JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+            }
+            JOT_delayedEvents = null;
+            JOT_postEvent('pageLoaded');
+        })();
+        //]]>
+    </script>
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_postEvent('decorateGvizCharts');
+    </script>
+    <script type="text/javascript">
+        JOT_setupPostRenderingManager();
+    </script>
+    <script type="text/javascript">
+        JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+    </script>
+    <div id="server-timer-div" style="display:none"> </div>
+    <script type="text/javascript">
+        window.jstiming.load.tick('render');
+        JOT_postEvent('usercontentrendered', this);
+    </script>
+    <script type="text/javascript" src="../navigation.js"></script>
+</body>
+
+<!-- Mirrored from sites.google.com/site/ieeevcip2015/program by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Mar 2015 17:30:05 GMT -->
+
+</html>

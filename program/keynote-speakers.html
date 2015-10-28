@@ -1,0 +1,741 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+
+<!-- Mirrored from sites.google.com/site/ieeevcip2015/program by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Mar 2015 17:30:05 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<!-- /Added by HTTrack -->
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <script type="text/javascript">
+        /* Copyright 2008 Google. */
+        (function() {
+            var b = window,
+                e = "chrome",
+                g = "tick",
+                h = "wtsrt_",
+                l = "tbsd_",
+                m = "tbnd_",
+                n = "start",
+                p = "_wtsrt",
+                q = "_tbnd",
+                r = "CSI/index.html";
+            (function() {
+                function k(a) {
+                    this.t = {};
+                    this.tick = function(a, d, c) {
+                        this.t[a] = [void 0 != c ? c : (new Date).getTime(), d];
+                        if (void 0 == c) try {
+                            b.console.timeStamp(r + a)
+                        } catch (f) {}
+                    };
+                    this[g](n, null, a)
+                }
+                var a;
+                b.performance && (a = b.performance.timing);
+                var t = a ? new k(a.responseStart) : new k;
+                b.jstiming = {
+                    Timer: k,
+                    load: t
+                };
+                if (a) {
+                    var d = a.navigationStart,
+                        f = a.responseStart;
+                    0 < d && f >= d && (b.jstiming.srt = f - d)
+                }
+                if (a) {
+                    var c = b.jstiming.load;
+                    0 < d && f >= d && (c[g](p, void 0, d), c[g](h, p, f), c[g](l, h))
+                }
+                try {
+                    a = null, b[e] && b[e].csi && (a = Math.floor(b[e].csi().pageT),
+                        c && 0 < d && (c[g](q, void 0, b[e].csi().startE), c[g](m, q, d))), null == a && b.gtbExternal && (a = b.gtbExternal.pageT()), null == a && b.external && (a = b.external.pageT, c && 0 < d && (c[g](q, void 0, b.external.startE), c[g](m, q, d))), a && (b.jstiming.pt = a)
+                } catch (u) {}
+            })();
+        })()
+    </script>
+    <link rel="shortcut icon" type="image/x-icon" href="http://www.google.com/images/icons/product/sites-16.ico" />
+    <link rel="apple-touch-icon" href="../ssl.gstatic.com/sites/p/b9df9c/system/app/images/apple-touch-icon.png" type="image/png" />
+    <script type="text/javascript">
+        /* Copyright 2008 Google. */
+        (function() {
+            var d = window,
+                e = "length",
+                h = "",
+                k = "__duration__",
+                l = "function";
+
+            function m(c) {
+                return document.getElementById(c)
+            }
+            d.byId = m;
+
+            function n(c) {
+                return c.replace(/^\s+|\s+$/g, h)
+            }
+            d.trim = n;
+            var p = [],
+                q = 0;
+            d.JOT_addListener = function(c, a, b) {
+                var f = new String(q++);
+                c = {
+                    eventName: c,
+                    handler: a,
+                    compId: b,
+                    key: f
+                };
+                p.push(c);
+                return f
+            };
+            d.JOT_removeListenerByKey = function(c) {
+                for (var a = 0; a < p[e]; a++)
+                    if (p[a].key == c) {
+                        p.splice(a, 1);
+                        break
+                    }
+            };
+            d.JOT_removeAllListenersForName = function(c) {
+                for (var a = 0; a < p[e]; a++) p[a].eventName == c && p.splice(a, 1)
+            };
+            d.JOT_postEvent = function(c, a, b) {
+                var f = {
+                    eventName: c,
+                    eventSrc: a || {},
+                    payload: b || {}
+                };
+                if (d.JOT_fullyLoaded)
+                    for (a = p[e], b = 0; b < a && b < p[e]; b++) {
+                        var g = p[b];
+                        g && g.eventName == c && (f.listenerCompId = g.compId || h, (g = typeof g.handler == l ? g.handler : d[g.handler]) && g(f))
+                    } else d.JOT_delayedEvents.push({
+                        eventName: c,
+                        eventSrc: a,
+                        payload: b
+                    })
+            };
+            d.JOT_delayedEvents = [];
+            d.JOT_fullyLoaded = !1;
+            d.JOT_formatRelativeToNow = function(c, a) {
+                var b = ((new Date).getTime() - c) / 6E4;
+                if (1440 <= b || 0 > b) return null;
+                var f = 0;
+                60 <= b && (b /= 60, f = 2);
+                2 <= b && f++;
+                return a ? d.JOT_siteRelTimeStrs[f].replace(k, Math.floor(b)) : d.JOT_userRelTimeStrs[f].replace(k, Math.floor(b))
+            };
+        })()
+    </script>
+    <script>
+        var breadcrumbs = [{
+            "path": "/site/ieeevcip2015/program",
+            "deleted": false,
+            "title": "Keynotes",
+            "dir": "ltr"
+        }];
+        var JOT_clearDotPath = '../ssl.gstatic.com/sites/p/b9df9c/system/app/images/cleardot.gif';
+
+
+        var JOT_userRelTimeStrs = ["a minute ago", "__duration__ minutes ago", "an hour ago", "__duration__ hours ago"];
+
+
+
+
+        var webspace = {
+            "enableAnalytics": false,
+            "pageSharingId": "jotspot_page",
+            "enableUniversalAnalytics": false,
+            "sharingPolicy": "OPENED",
+            "siteTitle": "IEEE VCIP 2015",
+            "isStartPageEnabled": false,
+            "adsensePublisherId": null,
+            "features": {
+                "languageSelectDefaultTextSetToDefault": true,
+                "copySiteProgressUpdates": true,
+                "siteNoticeUrl": true,
+                "moreMobileStyleImprovements": true,
+                "asyncPermanentDelete": true,
+                "newMyMapsEmbeds": true,
+                "analyticsTrackingForCorp": false,
+                "htmlEmbed": true,
+                "asyncPageKeyFix": true,
+                "driveImageLinkFromOnepick": true,
+                "domainAnalyticsInGAOnly": true,
+                "docosHideNotificationSettings": true,
+                "siteMapBottomPaginationButtonsFix": true,
+                "fileCabinetScreenReaderFix": true,
+                "useGapiIframesForOnePick": true,
+                "updatedTosAndPrivacyLinks": null,
+                "freebirdFormEmbedDocTypeFix": true,
+                "betterErrorMessagingOnPageDeletion": false,
+                "pageDrafts": false,
+                "mobileOrientationFix": true,
+                "plusBadge": false,
+                "fileCabinetExpandCollapseSpaceBarFix": false,
+                "pdfEmbedSupport": false,
+                "jsClickFix": true
+            },
+            "isPublic": true,
+            "isConsumer": true,
+            "serverFlags": {
+                "cajaBaseUrl": "//www.gstatic.com/caja",
+                "cajaDebugMode": false
+            },
+            "onepickBaseUrl": "https://docs.google.com",
+            "domainAnalyticsAccountId": "",
+            "plusPageId": "",
+            "signInUrl": "https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/site/ieeevcip2015/program\u0026service\u003djotspot",
+            "analyticsAccountId": "",
+            "scottyUrl": "/_/upload",
+            "homePath": "/",
+            "siteNoticeUrlEnabled": null,
+            "plusPageUrl": "",
+            "adsensePromoClickedOrSiteIneligible": true,
+            "csiReportUri": "https://gg.google.com/csi",
+            "sharingId": "jotspot",
+            "termsUrl": "//www.google.com/intl/en/policies/terms/",
+            "gvizVersion": 1,
+            "editorResources": {
+                "sitelayout": ["https://ssl.gstatic.com/sites/p/b9df9c/system/app/css/sitelayouteditor.css"],
+                "text": ["https://ssl.gstatic.com/sites/p/b9df9c/system/js/codemirror.js", "ssl.gstatic.com/sites/p/b9df9c/system/app/css/codemirror_css.css", "ssl.gstatic.com/sites/p/b9df9c/system/js/trog_edit__en.js", "ssl.gstatic.com/sites/p/b9df9c/system/app/css/trogedit.css", "_/system/app/css/editor.css", "ssl.gstatic.com/sites/p/b9df9c/system/app/css/codeeditor.css", "/site/ieeevcip2015/_/system/app/css/camelot/editor-jfk.css"]
+            },
+            "sharingUrlPrefix": "/_/sharing",
+            "isAdsenseEnabled": true,
+            "domain": "defaultdomain",
+            "baseUri": "/site/ieeevcip2015",
+            "name": "ieeevcip2015",
+            "siteTemplateId": false,
+            "siteNoticeRevision": null,
+            "siteNoticeUrlAddress": null,
+            "siteNoticeMessage": null,
+            "page": {
+                "isRtlLocale": false,
+                "canDeleteWebspace": null,
+                "isPageDraft": null,
+                "parentPath": null,
+                "parentWuid": null,
+                "siteLocale": "en",
+                "timeZone": "America/Los_Angeles",
+                "type": "text",
+                "title": "Keynotes",
+                "locale": "en",
+                "wuid": "wuid:gx:7675b46da67b101d",
+                "revision": 12,
+                "path": "/program",
+                "isSiteRtlLocale": false,
+                "pageInheritsPermissions": null,
+                "name": "program",
+                "canChangePath": true,
+                "state": "",
+                "properties": {},
+                "bidiEnabled": false,
+                "currentTemplate": {
+                    "path": "/config/pagetemplates/standardpage",
+                    "title": "StandardPage"
+                }
+            },
+            "canPublishScriptToAnyone": true,
+            "user": {
+                "keyboardShortcuts": true,
+                "sessionIndex": "",
+                "guest_": true,
+                "displayNameOrEmail": "guest",
+                "userName": "guest",
+                "uid": "",
+                "renderMobile": false,
+                "domain": "",
+                "namespace": "",
+                "hasWriteAccess": false,
+                "namespaceUser": false,
+                "primaryEmail": "guest",
+                "dasherUser": false,
+                "hasAdminAccess": false
+            },
+            "gadgets": {
+                "baseUri": "/site/ieeevcip2015/system/app/pages/gadgets"
+            }
+        };
+        webspace.page.breadcrumbs = breadcrumbs;
+
+
+
+        var JOT_siteRelTimeStrs = ["a minute ago", "__duration__ minutes ago", "an hour ago", "__duration__ hours ago"];
+    </script>
+    <script type="text/javascript">
+        window.jstiming.load.tick('scl');
+    </script>
+    <meta name="title" content="Keynotes - IEEE VCIP 2015" />
+    <meta itemprop="name" content="Keynotes - IEEE VCIP 2015" />
+    <meta property="og:title" content="Keynotes - IEEE VCIP 2015" />
+    <style type="text/css">
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: italic;
+            font-weight: 700;
+            src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(http://fonts.gstatic.com/s/opensans/v10/PRmiXeptR36kaC0GEAetxp_TkvowlIOtbR7ePgFOpF4.ttf) format('truetype');
+        }
+        
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v10/cJZKeOuBrn4kERxqtaUH3aCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+        }
+        
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://fonts.gstatic.com/s/opensans/v10/k3k702ZOKiLJc3WVjuplzInF5uFdDttMLvmWuJdhhgs.ttf) format('truetype');
+        }
+        
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: italic;
+            font-weight: 400;
+            src: local('Open Sans Italic'), local('OpenSans-Italic'), url(http://fonts.gstatic.com/s/opensans/v10/xjAJXh38I15wypJXxuGMBp0EAVxt0G0biEntp43Qt6E.ttf) format('truetype');
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="../ssl.gstatic.com/sites/p/b9df9c/system/app/themes/ski/standard-css-ski-ltr-ltr.css" />
+    <link rel="stylesheet" type="text/css" href="../_/system/app/css/overlaya6d0.css?cb=ski42a1024px300160goog-ws-leftnone30bottomcenter" />
+    <link rel="stylesheet" type="text/css" href="../_/system/app/css/camelot/allthemes-view.css" />
+    <!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/site/ieeevcip2015/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+    <title>Keynotes - IEEE VCIP 2015</title>
+    <script type="text/javascript">
+        window.jstiming.load.tick('cl');
+    </script>
+</head>
+
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+    <div id="sites-page-toolbar" class="sites-header-divider">
+        <div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;">
+            <div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div>
+        </div>
+    </div>
+    <div id="sites-chrome-everything-scrollbar">
+        <div id="sites-chrome-everything" class="">
+            <div id="sites-chrome-page-wrapper" style="direction: ltr">
+                <div id="sites-chrome-page-wrapper-inside">
+                    <div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="">
+                        <table id="sites-chrome-header" class="sites-layout-hbox-centered" cellspacing="0" style="">
+                            <tr class="sites-header-primary-row" id="sites-chrome-userheader">
+                                <td id="sites-header-title" class="sites-header-title-centered sites-chrome-header-valign-bottom" role="banner" style="height: 300px">
+                                    <div class="sites-header-cell-buffer-wrapper">
+                                        <h2></h2></div>
+                                </td>
+                            </tr>
+                            <tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+                                <td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="sites-chrome-main-wrapper">
+                        <div id="sites-chrome-main-wrapper-inside">
+                            <table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+                                <tr>
+                                    <td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:160px">
+                                        <div xmlns="http://www.w3.org/1999/xhtml" id="COMP_2bd" class="sites-embed" role="navigation">
+                                            <div class="sites-embed-content sites-sidebar-nav">
+                                                <ul role="navigation" jotId="navList" class="has-expander">
+                                                    <li class="topLevel nav-first ">
+                                                        <div dir="ltr" style="padding-left: 19px;"><a href="../home.html" jotId="wuid:gx:1d135b2208341774" class="sites-navigation-link topLevel">Home</a></div>
+                                                    </li>
+                                                    <li class="topLevel parent " wuid="gx:1af4ef11c450abd3">
+                                                        <div dir="ltr" style="padding-left: 0px;">
+                                                            <div class="expander"></div><a href="../call-for-submissions.html" jotId="wuid:gx:1af4ef11c450abd3" class="sites-navigation-link topLevel">Submissions</a></div>
+                                                        <ul role="navigation" class="has-expander">
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="../call-for-submissions/regular-papers.html" jotId="wuid:gx:5f3636e1532cb48" class="sites-navigation-link">Call for Papers</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="../call-for-submissions/special-sessions.html" jotId="wuid:gx:42784d781fa493f1" class="sites-navigation-link">Call for Special Sessions</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="../call-for-submissions/demos.html" jotId="wuid:gx:5f95862c4febfc71" class="sites-navigation-link">Call for Demos</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="../call-for-submissions/tutorials.html" jotId="wuid:gx:153cf8bea37237ef" class="sites-navigation-link">Call for Tutorials</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="../authors/author-guidelines.html" jotId="wuid:gx:373e61c82ce8ce92" class="sites-navigation-link">Author Guidelines</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="../authors/paper-submission.html" jotId="wuid:gx:41fc1951a964d1f2" class="sites-navigation-link">Paper Submission</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;">
+                                                                    <a href="../authors/camera-ready.html" jotid="wuid:gx:61c8ae5c171eb27e" class="sites-navigation-link">Camera Ready</a>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="topLevel parent " wuid="gx:2f23f595b3bac47f">
+                                                        <div dir="ltr" style="padding-left: 0px;">
+                                                            <div class="expander"></div><a href="../website-builder.html" jotId="wuid:gx:2f23f595b3bac47f" class="sites-navigation-link topLevel">Venue</a></div>
+                                                        <ul role="navigation" class="has-expander">
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="../website-builder/conference-venue.html" jotId="wuid:gx:545bce5b79eae923" class="sites-navigation-link">Conference Venue</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="../website-builder/accommodation.html" jotId="wuid:gx:bea7fb5c04954db" class="sites-navigation-link">Accommodation</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="../website-builder/about-singpaore.html" jotId="wuid:gx:545bce5b79eae923" class="sites-navigation-link">Local Information</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="../website-builder/travel-visa.html" jotId="wuid:gx:3dcd6f9fb67497ad" class="sites-navigation-link">Travel &amp; Visa</a></div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="topLevel parent " wuid="gx:7675b46da67b101d">
+                                                        <div jotid="wuid:gx:7675b46da67b101d" dir="ltr" style="padding-left: 0px;">
+                                                            <div class="expander"></div>
+                                                            <a href="../program.html" jotid="wuid:gx:7675b46da67b101d" class="sites-navigation-link topLevel">Program</a>
+                                                        </div>
+                                                        <ul role="navigation" class="has-expander">
+                                                            <li class="">
+                                                                <div jotid="wuid:gx:5d8236fc5864f372" dir="ltr" style="padding-left: 38px;">
+                                                                    <a href="at-a-glance.html" class="sites-navigation-link">At-A-Glance</a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div class="current-bg" dir="ltr" style="padding-left: 38px;">
+                                                                    Keynotes
+                                                                </div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;">
+                                                                    <a href="tutorials.html" jotid="wuid:gx:500080fce84d09b4" class="sites-navigation-link">Tutorials</a>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="topLevel ">
+                                                        <div dir="ltr" style="padding-left: 19px;"><a href="../registration.html" jotId="wuid:gx:635ceedf3f1fef99" class="sites-navigation-link topLevel">Registration</a></div>
+                                                    </li>
+                                                    <li class="topLevel ">
+                                                        <div dir="ltr" style="padding-left: 19px;"><a href="../important-dates.html" jotId="wuid:gx:47df0f69238fe487" class="sites-navigation-link topLevel">Important Dates</a></div>
+                                                    </li>
+                                                    <li class="topLevel parent ">
+                                                        <div dir="ltr" style="padding-left: 0px;">
+                                                            <div class="expander"></div><a href="../Organizing-Committee.html" class="sites-navigation-link topLevel">Committees</a></div>
+                                                        <ul role="navigation" class="has-expander">
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="../Organizing-Committee.html" jotId="wuid:gx:ae7463c7afb56f0" class="sites-navigation-link">Organizing Committee</a></div>
+                                                            </li>
+                                                            <li class="">
+                                                                <div dir="ltr" style="padding-left: 38px;"><a href="../area-chairs.html" class="sites-navigation-link">Area Chairs</a></div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="topLevel ">
+                                                        <div dir="ltr" style="padding-left: 19px;"><a href="../sponsors.html" jotId="wuid:gx:4d72d496ea350529" class="sites-navigation-link topLevel">Sponsors</a></div>
+                                                    </li>
+                                                    <li class="topLevel ">
+                                                        <div dir="ltr" style="padding-left: 19px;"><a href="../contact-us.html" jotId="wuid:gx:28e35145a03b1a2f" class="sites-navigation-link topLevel">Contact Us</a></div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- <div xmlns="http://www.w3.org/1999/xhtml" class="sites-embed-align-left-wrapping-off" id="COMP_6676803415175527" role="complementary"><div class="sites-embed-border-on sites-embed sites-embed-full-width" style="width:100%;"><div class="sites-embed-content sites-embed-type-countdown"><div aria-label="60 days until Paper Submissions Due" class="sites-embed-countdown sites-embed-countdown-fromdateutc-2015-5-15"><span jotid="content"><p style="text-align: center"><strong aria-hidden="true" class="sites-embed-countdown-daysapart" id="countdown_paper_dig" >60</strong>
+                                <span id="countdown_paper_text" aria-hidden="true">days until</span>
+                                <br aria-hidden="true" /> <strong aria-hidden="true">Paper Submissions Due</strong>
+                              </p>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div> -->
+                                        <div xmlns="http://www.w3.org/1999/xhtml" class="sites-embed-align-left-wrapping-off" id="COMP_7353365833405405" role="complementary">
+                                            <div class="sites-embed-border-on sites-embed sites-embed-full-width" style="width:100%;">
+                                                <div class="sites-embed-content sites-embed-type-countdown">
+                                                    <div aria-label="272 days until Conference Days" class="sites-embed-countdown sites-embed-countdown-fromdateutc-2015-12-13">
+                                                        <span jotid="content">
+                              <p style="text-align: center">
+                                <strong aria-hidden="true" class="sites-embed-countdown-daysapart"id="countdown_event_dig" >272</strong>
+                                <span id="countdown_event_text" aria-hidden="true">days until</span>
+                                                        <br aria-hidden="true" /><strong aria-hidden="true">Conference Days</strong></p>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td id="sites-canvas-wrapper">
+                                        <div id="sites-canvas" role="main">
+                                            <div id="sites-canvas-main" class="sites-canvas-main">
+                                                <div id="sites-canvas-main-content">
+                                                    <div xmlns="http://www.w3.org/1999/xhtml" class="sites-layout-name-one-column-hf sites-layout-vbox">
+                                                        <div class="sites-layout-tile sites-tile-name-header">
+                                                            <div dir="ltr">
+                                                                <a name="KeynoteTop"></a>
+                                                                <div style="text-align:left"><span style="line-height:24px;background-color:transparent"><font color="#444444" size="6">Keynotes</font></span></div>
+                                                                <div style="text-align:justify">
+                                                                    <br>
+                                                                </div>
+                                                                <div style="text-align:justify"><font size="1"><span style="line-height:15px"><br></span></font></div>
+                                                                <div style="text-align:justify">
+                                                                    <div>
+                                                                        <h2 style="font-stretch:inherit;padding-top:0px;margin-top:0px;margin-right:0px;margin-left:0px;border:0px;vertical-align:baseline;text-align:start;margin-bottom:10px!important"><a name="TOC-Design-and-Implementation-of-Stereo-Matching-for-Depth-Estimation-in-Computer-Vision-Applications-"></a><span style="font-family:RobotoMedium,Arial,sans-serif;font-size:20px;background-color:transparent;font-weight:normal"><font color="#3d85c6"><div style="display:inline;float:left;margin-top:5px;margin-right:10px;margin-bottom:0px;margin-left:0px"><img border="0" height="200" src="../_/program/keynote-speakers/LGChen.jpg?height=200&amp;width=160" width="160"></div><h2 style="font-stretch:inherit;padding-top:0px;margin-top:0px;margin-right:0px;margin-left:0px;border:0px;vertical-align:baseline;text-align:start;margin-bottom:10px!important"><a name="TOC-1"></a><span style="font-family:RobotoMedium,Arial,sans-serif;font-size:20px;background-color:transparent;font-weight:normal"><font color="#3d85c6"><br></font></span></h2>Design and Implementation of Stereo Matching for Depth Estimation in Computer Vision Applications&nbsp;</font>
+                                                                        </span>
+                                                                        </h2>
+                                                                        <h2 style="font-stretch:inherit;padding-top:0px;margin-top:0px;margin-right:0px;margin-left:0px;border:0px;vertical-align:baseline;text-align:start;margin-bottom:10px!important"><a name="TOC-Prof.-Liang-Gee-Chen-National-Taiwan-University-Taiwan-09:00-10:00-Monday-14-December-2015-Abstract-Biography"></a><font color="#444444"><span style="line-height:30px;background-color:transparent;font-weight:normal"><font face="RobotoMedium, Arial, sans-serif" size="3">Prof. Liang-Gee Chen, National Taiwan University, Taiwan&nbsp;<br>
+                                                    </font></span><span style="font-weight:normal;font-family:RobotoMedium,Arial,sans-serif;font-size:medium;line-height:30px;background-color:transparent">09:00-10:00, Monday, 14 December 201</span><span style="font-weight:normal;line-height:30px;background-color:transparent"><font face="RobotoMedium, Arial, sans-serif" size="3">5<br>
+                                                    </font></span><a href="#Keynote1"><span style="font-family:inherit;font-size:16px;font-style:inherit;font-variant:inherit;line-height:30px;font-weight:normal;background-color:transparent">Abstract &amp; Biography</span></a></font></h2>
+                                                                    </div>
+                                                                    <div>
+                                                                        <br>
+                                                                    </div>
+                                                                    <div>
+                                                                        <br>
+                                                                    </div>
+                                                                    <div>
+                                                                        <h2 style="font-stretch:inherit;padding-top:0px;margin-top:0px;margin-right:0px;margin-left:0px;border:0px;vertical-align:baseline;text-align:start;margin-bottom:10px!important"><a name="TOC-Jumping-between-Text-Images-and-Video-"></a><span style="line-height:30px;background-color:transparent">
+                                                    <div style="font-family:RobotoMedium,Arial,sans-serif;color:rgb(42,78,150);display:inline;float:left;margin-top:5px;margin-right:10px;margin-bottom:0px;margin-left:0px"><img border="0" height="200" src="../_/program/keynote-speakers/Rui.jpg?height=200&amp;width=161" width="161"></div>
+                                                    <h2 style="color:rgb(42,78,150);font-stretch:inherit;padding-top:0px;margin-top:0px;margin-right:0px;margin-left:0px;border-top-width:0px;border-right-width:0px;border-bottom-width:0px;border-left-width:0px;border-style:initial;border-color:initial;vertical-align:baseline;text-align:start;margin-bottom:10px!important"><a name="TOC-2"></a><font face="RobotoMedium, Arial, sans-serif" size="1"><br></font></h2>
+                                                                        <div><font face="RobotoMedium, Arial, sans-serif" size="1"><br></font></div>
+                                                                        <h2 style="font-family:RobotoMedium,Arial,sans-serif;font-size:20px;font-stretch:inherit;padding-top:0px;margin-top:0px;margin-right:0px;margin-left:0px;border-top-width:0px;border-right-width:0px;border-bottom-width:0px;border-left-width:0px;border-style:initial;border-color:initial;vertical-align:baseline;text-align:start;margin-bottom:10px!important"><a name="TOC-Jumping-between-Text-Images-and-Video-1"></a><span style="font-family:RobotoMedium,Arial,sans-serif;background-color:transparent;font-weight:normal"><font color="#3d85c6">Jumping between Text, Images and Video&nbsp;</font></span></h2>
+                                                                        </span>
+                                                                        </h2>
+                                                                        <h2 style="font-stretch:inherit;padding-top:0px;margin-top:0px;margin-right:0px;margin-left:0px;border:0px;vertical-align:baseline;text-align:start;margin-bottom:10px!important"><a name="TOC-Dr.-Yong-Rui-Microsoft-Research-Asia-China-09:00-10:00-Tuesday-15-December-2015-Abstract-Biography"></a><font color="#444444"><font face="RobotoMedium, Arial, sans-serif" size="3"><span style="font-weight:normal;line-height:30px">Dr. Yong Rui, Microsoft Research Asia, China&nbsp;<br>
+                                                    </span></font><span style="font-weight:normal;line-height:30px;background-color:transparent"><font face="RobotoMedium, Arial, sans-serif" size="3">09:00-10:00, Tuesday, 15 December 2015<br>
+                                                    </font></span><a href="#Keynote2"><span style="font-family:inherit;font-size:16px;font-style:inherit;font-variant:inherit;font-weight:normal;line-height:30px;background-color:transparent">Abstract &amp; Biography</span></a></font></h2>
+                                                                        <div><span style="font-family:inherit;font-size:16px;font-style:inherit;font-variant:inherit;font-weight:normal;line-height:30px;color:rgb(11,83,148);background-color:transparent"><br>
+                                                    </span></div>
+                                                                        <div>
+                                                                            <br>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div>
+                                                                        <div>
+                                                                            <h2 style="font-stretch:inherit;padding-top:0px;margin-top:0px;margin-right:0px;margin-left:0px;border:0px;vertical-align:baseline;text-align:start;margin-bottom:10px!important"><a name="TOC-Content-Identification-"></a><span style="line-height:30px;background-color:transparent"><font face="RobotoMedium, Arial, sans-serif">
+                                                    <div style="font-size:20px;display:inline;float:left;margin:5px 10px 0px 0px"><img border="0" height="200" src="../_/program/keynote-speakers/Pierre.jpg?height=200&amp;width=159" width="159"></div>
+                                                    <h2 style="font-stretch:inherit;padding-top:0px;margin-top:0px;margin-right:0px;margin-left:0px;border:0px;vertical-align:baseline;text-align:start;margin-bottom:10px!important"><a name="TOC-3"></a><span style="font-family:RobotoMedium,Arial,sans-serif;background-color:transparent;font-weight:normal"><font color="#3d85c6" size="1"><br>
+                                                    </font></span></h2>
+                                                                            <h2 style="font-stretch:inherit;padding-top:0px;margin-top:0px;margin-right:0px;margin-left:0px;border:0px;vertical-align:baseline;text-align:start;margin-bottom:10px!important"><a name="TOC-4"></a><font color="#3d85c6"><br>
+                                                    </font></h2>
+                                                                            <h2 style="font-size:20px;font-stretch:inherit;padding-top:0px;margin-top:0px;margin-right:0px;margin-left:0px;border:0px;vertical-align:baseline;text-align:start;margin-bottom:10px!important"><a name="TOC-Content-Identification-1"></a><span style="font-family:RobotoMedium,Arial,sans-serif;font-size:20px;background-color:transparent;font-weight:normal"><font color="#3d85c6">Content Identification&nbsp;</font></span></h2>
+                                                                            </font>
+                                                                            </span>
+                                                                            </h2>
+                                                                            <h2 style="padding-top:0px;font-stretch:inherit;margin-top:0px;margin-right:0px;margin-left:0px;border:0px;vertical-align:baseline;text-align:start;margin-bottom:10px!important"><a name="TOC-Prof.-Pierre-Moulin-University-of-Illinois-at-Urbana-Champaign-USA-09:00-10:00-Wednesday-16-December-2015-Abstract-Biography"></a><font color="#444444"><font face="RobotoMedium, Arial, sans-serif" size="3"><span style="line-height:30px"><span style="font-weight:normal">Prof. Pierre Moulin, University of Illinois at Urbana-Champaign, USA</span><br>
+                                                    </span></font><span style="font-weight:normal;line-height:30px;background-color:transparent"><font face="RobotoMedium, Arial, sans-serif" size="3">09:00-10:00, Wednesday, 16 December 2015<br>
+                                                    </font></span><a href="#Keynote3"><span style="font-family:inherit;font-size:16px;font-style:inherit;font-variant:inherit;font-weight:normal;line-height:30px;background-color:transparent">Abstract &amp; Biography</span></a><a name="Keynote1"></a></font></h2>
+                                                                            <h2 style="font-stretch:inherit;padding-top:0px;margin-top:0px;margin-right:0px;margin-left:0px;border:0px;vertical-align:baseline;text-align:start;margin-bottom:10px!important"><a name="TOC-5"></a><br>
+                                                    </h2>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div>
+                                                                        <br>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="sites-layout-tile sites-tile-name-content-1">
+                                                            <div dir="ltr">
+                                                                <div style="margin-bottom:20px;border:1px solid rgb(221,221,221);border-radius:4px;box-shadow:rgba(0,0,0,0.0470588) 0px 1px 1px">
+                                                                    <div style="padding:10px 15px;border-bottom-width:1px;border-bottom-style:solid;border-color:rgb(221,221,221);border-top-left-radius:3px;border-top-right-radius:3px;background-color:rgb(245,245,245)">
+                                                                        <p style="text-align:left;margin-top:0px;margin-bottom:0px"><font color="#3d85c6"><span style="font-size:medium;line-height:25px">Keynote 1 :&nbsp;</span><font size="3"><span style="line-height:25px">Design and Implementation of Stereo Matching for Depth Estimation in <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Computer Vision Applications</span></font></font>
+                                                                        </p>
+                                                                        <p style="text-align:left;margin-top:0px;margin-bottom:0px"><font color="#3d85c6"><span style="font-size:medium;line-height:25px">Professor Liang-Gee Chen, National Taiwan University, Taiwan</span><font size="3"><span style="line-height:25px">&nbsp;</span></font></font>
+                                                                        </p>
+                                                                        <p style="text-align:left;margin-top:0px;margin-bottom:0px"><font color="#3d85c6" size="3"><span style="line-height:25px">09:00-10:00, Monday, 14 December 2015</span></font></p>
+                                                                    </div>
+                                                                    <div style="padding:15px">
+                                                                        <div style="font-family:Open Sans;line-height:21px;text-align:justify"><span style="font-family:Helvetica Neue,Helvetica,Arial,sans-serif;line-height:20px;text-align:left;background-color:transparent"><b><font color="#3d85c6">Abstract: &nbsp;&nbsp;</font></b></span></div>
+                                                                        <div style="text-align:justify">
+                                                                            <div>Depth information is the essential enabler of many emerging computer vision applications, such as 3D model reconstruction, augmented/virtual reality, computational photography, and pose estimation/recognition for human-machine interface. Although active sensing techniques provide accurate depth maps and have been adopted in many commercial devices, they are usually constrained to indoor applications for their short sensing range and vulnerability to the sun light. Also, their limited resolution and huge power consumption are still remaining challenges for portable consumer electronics. In contrast, the passive methods using stereo matching have the opportunity to provide high-resolution depth maps, even for outdoor or low-power scenarios. Recently, many research works also showed that great disparity accuracy can be achieved by using multi-view light field systems, instead of conventional two-view cameras.</div>
+                                                                            <div>
+                                                                                <br>
+                                                                            </div>
+                                                                            <div>Stereo matching problems have been widely studied in computer vision, and many excellent algorithms are also available. They use the correspondence between RGB images to estimate the disparity of each pixel which is inversely proportional to the depth. However, to bring high-quality disparity maps into our daily life, we will need efficient hardware designs to provide real-time, cost-effective and low-power processing. In this keynote, I will review previous achievements on this topic and also explore new challenges and opportunities. The three key ingredients of stereo matching will be discussed: local cost generation, global energy optimization and post-processing. Design considerations for different camera systems, e.g. two-view v.s. light-field, will also be highlighted.</div>
+                                                                            <div style="color:rgb(97,97,97);font-family:Open Sans;line-height:21px">
+                                                                                <br>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div style="text-align:justify"><b><font color="#3d85c6">Speaker's Biography</font></b></div>
+                                                                        <div style="text-align:justify"><span style="background-color:transparent"><b>Professor Liang-Gee Chen</b>&nbsp;</span><span style="line-height:1.5;background-color:transparent">received the B.S., M.S., and Ph.D. degrees in electrical engineering from National Cheng Kung University, Tainan, Taiwan, R.O.C. in 1979, 1981, and 1986, respectively. In 1988, he joined the Department of Electrical Engineering, National Taiwan University. Recently, he serves as the Executive Vice-President of National Taiwan University. He received the National Professorship of Taiwan. He is the IEEE Fellow from 2001. His research interests include DSP architecture design, video processor design, and video coding systems. He has over 420 publications and 15 US patents. He is a member of Phi Tau Phi.</span></div>
+                                                                        <div style="text-align:justify">
+                                                                            <br>Dr. Chen has served as an Associate Editor of several IEEE Transactions including Circuits and Systems for Video Technology, VLSI Systems, Circuits and Systems II. He is a member of IEEE CAS Technical Committee of VLSI Systems and Applications, the Technical Committee of Visual Signal Processing and Communications, and the IEEE Signal Processing Technical Committee of Design and Implementation of SP Systems. He served as the TPC chair of 2009 IEEE ICASSP and ISCAS 2012. In 2011, he received the Best paper award of IEEE CICC, Custom Integrated Circuits Conference .</div>
+                                                                        <div><span style="line-height:1.5;background-color:transparent"><b><font color="#3d85c6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="#KeynoteTop" style="text-decoration:underline">Back to the Top ▲</a></font></b></span>
+                                                                            <a name="Keynote2" style="text-align:justify"></a><span style="text-align:justify">&nbsp;</span> </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div style="margin-bottom:20px;border:1px solid rgb(221,221,221);border-radius:4px;box-shadow:rgba(0,0,0,0.0470588) 0px 1px 1px">
+                                                                    <div style="padding:10px 15px;border-bottom-width:1px;border-bottom-style:solid;border-color:rgb(221,221,221);border-top-left-radius:3px;border-top-right-radius:3px;background-color:rgb(245,245,245)">
+                                                                        <p style="text-align:left;margin-top:0px;margin-bottom:0px"><font color="#3d85c6"><span style="font-size:medium;line-height:25px">Keynote 2: &nbsp;</span><font size="3"><span style="line-height:25px">Jumping between Text, Images and Video</span></font></font>
+                                                                        </p>
+                                                                        <p style="text-align:left;margin-top:0px;margin-bottom:0px"><font color="#3d85c6" size="3"><span style="line-height:25px">Dr. Yong Rui, Microsoft Research Asia, China&nbsp;</span></font></p>
+                                                                        <p style="text-align:left;margin-top:0px;margin-bottom:0px"><span style="line-height:25px;font-size:medium"><font color="#3d85c6">09:00-10:00, Tuesday, 15 December 2015</font></span></p>
+                                                                    </div>
+                                                                    <div style="padding:15px">
+                                                                        <div style="font-family:Open Sans;line-height:21px;text-align:justify"><span style="font-family:Helvetica Neue,Helvetica,Arial,sans-serif;line-height:20px;text-align:left;background-color:transparent"><b><font color="#3d85c6">Abstract: &nbsp;&nbsp;</font></b></span></div>
+                                                                        <div style="text-align:justify">In this keynote, we will discuss the different modes of search and mining between text, images and videos. For example, text2text is the regular web search, image2image is the traditional content-based image retrieval (CBIR), and text2image is image search. &nbsp;This categorization will give the audience a clear understanding about the different aspects related to text and multimedia search. &nbsp;The talk will specifically focus on three key new scenarios, i.e., image search, image2text and video to text. &nbsp;In image search, we will discuss the recent progress in query understanding, content understanding and semantics understanding. In image2text and video2text, we will present recent research in how to use deep learning and language model in generating close-to-human quality sentence generation in specific domains. &nbsp;In conclusion, we show there are still difficulties and challenges in all the above discussed tasks and rally the researchers to bring the multimedia understanding research to the next level.&nbsp;</div>
+                                                                        <div style="text-align:justify">
+                                                                            <br>
+                                                                        </div>
+                                                                        <div style="text-align:justify"></div>
+                                                                        <div style="text-align:justify"><b><font color="#3d85c6">Speaker's Biography</font></b></div>
+                                                                        <div style="text-align:justify"><span style="text-align:left;background-color:transparent"><b>Dr. Yong Rui </b>is currently a Senior Director and Principal Researcher at Microso</span><span style="text-align:left;line-height:1.5;background-color:transparent">ft Rese</span><span style="text-align:left;line-height:1.5;background-color:transparent">arch Asia, leading research effort in the areas of multimedia search and mining, knowledge mi</span><span style="line-height:1.5;text-align:left;background-color:transparent">ning, and social computing. </span><span style="line-height:1.5;text-align:left;background-color:transparent">From 2010 to 2012, he was Senior Director at Microso</span><span style="line-height:1.5;text-align:left;background-color:transparent">ft Asia-Pacific R&amp;D (AR</span><span style="line-height:1.5;text-align:left;background-color:transparent">D) Group in charge of China Innovation. From 2008 to 2010, he was Director of M</span><span style="line-height:1.5;text-align:left;background-color:transparent">icrosoft Education Pro</span><span style="line-height:1.5;text-align:left;background-color:transparent">duct in China. From 2006 to 2008, he was a founding member of ARD&nbsp;</span><span style="line-height:1.5;text-align:left;background-color:transparent">and its first Director of Strategy. From 1999 to 2006, he was Researcher and Senior Researcher of the Multimedia Collaboration group at Micro</span><span style="line-height:1.5;text-align:left;background-color:transparent">soft Research, Redmond, USA.&nbsp;</span><span style="line-height:1.5;text-align:left;background-color:transparent">His 15-year Microsoft experience covers a wide spectrum of activities ranging from strategic planning, b</span><span style="line-height:1.5;text-align:left;background-color:transparent">asic research, technology incubation, to product development.&nbsp;</span></div>
+                                                                        <div style="text-align:justify"><span style="line-height:1.5;text-align:left;background-color:transparent"><br>
+                                                    </span></div>
+                                                                        <div style="text-align:justify"><span style="line-height:1.5;text-align:left;background-color:transparent">A Fellow of IEEE, IAPR and SPIE, and a Distinguished Scientist of ACM, Rui is recognized as a leading expert in his research areas. He holds 56 issued US and international patents. He has published 16 books and book chapters, and 100+ referred journal and conference papers. Rui’s publications are among the most cited – 13,533 citations and his h-Index = 47.&nbsp;</span></div>
+                                                                        <div style="text-align:justify"><span style="text-align:left;line-height:1.5;background-color:transparent"><br>
+                                                    </span></div>
+                                                                        <div style="text-align:justify"><span style="text-align:left;line-height:1.5;background-color:transparent">Dr. Rui is the Editor-in-Chief of IEEE Multimedia Magazine, an Associate Editor of ACM Trans. on Multimedia Computing, Communication and Applications (TOMM), a founding Editor of International Journal of Multimedia Information Retrieval, and a founding Associate Editor of IEEE Access. He was an Associate Editor of IEEE Trans. on Multimedia (2004-2008), IEEE Trans. on Circuits and Systems for Video Technologies (2006-2010), ACM/Springer Multimedia Systems Journal (2004-2006), and International Journal of Multimedia Tools and Applications (2004- 2006). He also serves on the Advisory Board of IEEE Trans. on Automation Science and Engineering.&nbsp;</span></div>
+                                                                        <div style="text-align:justify"><span style="text-align:left;line-height:1.5;background-color:transparent"><br>
+                                                    </span></div>
+                                                                        <div style="text-align:justify"><span style="text-align:left;line-height:1.5;background-color:transparent">Dr. Rui is on Organizing Committees and Program Committees of numerous conferences including ACM Multimedia, ACM ICMR, IEEE ICME, SPIE ITCom, and ICPR. He is General Co-Chair of ACM Multimedia in 2009 and 2014, ACM ICMR in 2006 and 2012, and ICIMCS in 2010, and Program Co-Chair of ACM Multimedia in 2006, Pacific Rim Multimedia (PCM) in 2006, and IEEE ICME in 2009. Dr. Rui is/was on the Steering Committees of ACM Multimedia, ACM ICMR, IEEE ICME and PCM. He is an Executive Member of ACM SIGMM, and the founding Chair of its China Chapter.&nbsp;</span></div>
+                                                                        <div style="text-align:justify"><span style="text-align:left;line-height:1.5;background-color:transparent"><br>
+                                                    </span></div>
+                                                                        <div style="text-align:justify"><span style="text-align:left;line-height:1.5;background-color:transparent">Dr. Rui served as a member of review panels for the US National Science Foundation (NSF), the Chinese National Science Foundation (CNSF), the Australian Research Council, and the Research Grants Council of Hong Kong. He is/was a Guest Professor of Chinese Academy of Sciences, Peking University, University of Science and Technology of China (USTC), Zhejiang University, Xi’an JiaoTong University and Southeast University.&nbsp;</span></div>
+                                                                        <div style="text-align:justify"><span style="text-align:left;line-height:1.5;background-color:transparent"><br>
+                                                    </span></div>
+                                                                        <div style="text-align:justify"><span style="text-align:left;line-height:1.5;background-color:transparent">Dr. Rui received his BS from Southeast University, his MS from Tsinghua University, and his PhD from University of Illinois at Urbana-Champaign (UIUC). He also holds a Microsoft Leadership Training Certificate from Wharton Business School, University of Pennsylvania.&nbsp;</span></div>
+                                                                        <div style="text-align:justify"><span style="text-align:left;line-height:1.5;background-color:transparent"><span style="line-height:1.5;background-color:transparent"><b><font color="#3d85c6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="#KeynoteTop" style="text-decoration:underline">Back to the Top ▲</a></font></b></span>
+                                                                            <a name="Keynote3" style="text-align:justify"></a><span style="text-align:justify">&nbsp;</span></span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div style="margin-bottom:20px;border:1px solid rgb(221,221,221);border-radius:4px;box-shadow:rgba(0,0,0,0.0470588) 0px 1px 1px">
+                                                                    <div style="padding:10px 15px;border-bottom-width:1px;border-bottom-style:solid;border-color:rgb(221,221,221);border-top-left-radius:3px;border-top-right-radius:3px;background-color:rgb(245,245,245)">
+                                                                        <p style="text-align:left;margin-top:0px;margin-bottom:0px"><span style="font-size:medium;line-height:25px"><font color="#3d85c6">Keynote 3: Content Identification&nbsp;</font></span></p>
+                                                                        <p style="text-align:left;margin-top:0px;margin-bottom:0px"><font color="#3d85c6"><font size="3"><span style="line-height:25px">Professor&nbsp;Pierre Moulin,&nbsp;</span></font><font size="3"><span style="line-height:25px">University of Illinois at Urbana-Champaign, USA</span></font></font>
+                                                                        </p>
+                                                                        <p style="text-align:left;margin-top:0px;margin-bottom:0px"><font color="#3d85c6" size="3"><span style="line-height:25px">09:00-10:00, Wednesday, 16 December 2015</span></font></p>
+                                                                    </div>
+                                                                    <div style="padding:15px">
+                                                                        <div style="font-family:Open Sans;line-height:21px;text-align:justify">
+                                                                            <br>
+                                                                        </div>
+                                                                        <div style="text-align:justify"><b><font color="#3d85c6">Speaker's Biography</font></b></div>
+                                                                        <div style="text-align:justify"><span style="background-color:transparent">Professor </span><span style="background-color:transparent">Pierre Moulin received his Engineer degree from the Ecole Polytechnique of Mons, Belgium, and his doctorate from Washington University in St. Louis (1990). After working as a R</span><span style="line-height:1.5;background-color:transparent">esearch Scientist for Bell Communic</span><span style="line-height:1.5;background-color:transparent">ations Research in Morristown, New Jersey, he joined the University of I</span><span style="line-height:1.5;background-color:transparent">llinois as Assistant Professor</span><span style="line-height:1.5;background-color:transparent">(1996) and later became Associate Professor (1999) and Pr</span><span style="line-height:1.5;background-color:transparent">ofessor (2003) in the Department of Electrical and Computer Engineering, Research Professor in th</span><span style="line-height:1.5;background-color:transparent">e Coordinated Science Laboratory, faculty me</span><span style="line-height:1.5;background-color:transparent">mber in the Beckman&nbsp;</span><span style="line-height:1.5;background-color:transparent">Institute's Image Formation and Processing Group, a</span><span style="line-height:1.5;background-color:transparent">nd affiliate professor in the department of Statistics. He is also a member of the Information Trust</span><span style="line-height:1.5;background-color:transparent">Institute and the founding director of the Center for Information Forensics, a multidisciplinary research center currently involving twenty colleagues. He is also a member of the Advanced Digital Sciences Center, a multidisciplinary research center of UIUC in Singapore. His fields of professional interest are information theory, image and video processing, statistical signal processing and modeling, decision theory, information hiding and authentication, and the application of multiresolution signal analysis, optimization theory, and fast algorithms to these areas.</span></div>
+                                                                        <div style="text-align:justify">
+                                                                            <br>
+                                                                        </div>
+                                                                        <div style="text-align:justify">He served as Associate Editor for the IEEE Transactions on Information Theory from 1996 till 1998, for the IEEE Transactions on Image Processing from 1999 till 2002, and then as Area Editor from 2002 till 2006. In 1999, he was co-chair of the IEEE Information Theory workshop on Detection, Estimation and Classification. He was a Guest Editor of the IEEE Transactions on Information Theory 2000 special issue on Information-Theoretic Imaging; Guest Editor of the IEEE Transactions on Signal Processing's 2003 special issue on Data Hiding; and member of the IEEE Image and Multidimensional Signal Processing (IMDSP) Society Technical Committee (1998-2003), the Information Forensics and Security (IFS) Technical Committee (2007-2010) and the Image, Video, and Multidimensional Signal Processing (IVMSP) Technical Committee (2010-present); and the Board of Governors of the IEEE Signal Processing Society (2005-2007). He was co-founder and Editor-in-Chief of the IEEE Transactions on Information Forensics and Security. He is a Fellow of IEEE (2003), recipient of a 1997 Career award from the National Science Foundation, and of the IEEE Signal Processing Society 1997 Best Paper award in the IMDSP area. He is also co-author (with Juan Liu) of a paper that received the IEEE Signal Processing Society 2002 Young Author Best Paper award in the IMDSP area. He was selected as Beckman Associate of UIUC's Center for Advanced Study (2003) and Sony Faculty Scholar (2005-2007). He was plenary speaker for several international conferences and workshops, and Distinguished Lecturer of the IEEE Signal Processing Society for 2012-2013. He was on the Dean's list of teachers rated excellent by their students in 1996, 1999, 2000, 2005, 2007, 2009, 2011, 2012, and 2014.</div>
+                                                                        <div style="text-align:justify"><span style="text-align:left;line-height:1.5;background-color:transparent"><b><font color="#3d85c6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="#KeynoteTop" style="text-decoration:underline">Back to the Top ▲</a></font></b></span>&nbsp;</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="sites-layout-tile sites-tile-name-footer sites-layout-empty-tile">
+                                                            <div dir="ltr">
+                                                                <br>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="sites-canvas-bottom-panel">
+                                                <div id="sites-attachments-container">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="sites-chrome-footer-wrapper">
+                        <div id="sites-chrome-footer-wrapper-inside">
+                            <div id="sites-chrome-footer">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sites-chrome-onebar-footer">
+    </div>
+
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        window.jstiming.load.tick('sjl');
+    </script>
+    <script xmlns="http://www.w3.org/1999/xhtml" src="../ssl.gstatic.com/sites/p/b9df9c/system/js/jot_min_view__en.js"></script>
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        window.jstiming.load.tick('jl');
+    </script>
+
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+        JOT_setupNav("2bd", "Navigation", false);
+        JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_2bd');
+    </script>
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        setTimeout(function() {
+            var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+            gsites.Xhr.send('_/tz.html', null, null, 'GET', null, null, {
+                afjstz: fingerprint
+            });
+        }, 500);
+    </script>
+    <script xmlns="http://www.w3.org/1999/xhtml">
+        window.onload = function() {
+            if (false) {
+                JOT_setMobilePreview();
+            }
+            var loadTimer = window.jstiming.load;
+            loadTimer.tick("ol");
+            loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+            window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+        }
+    </script>
+
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+    </script>
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+            webspace, "en");
+        maestroRunner.initListeners();
+        maestroRunner.installEditRender();
+    </script>
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+        //<![CDATA[
+        // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+        if (webspace.user.hasWriteAccess) {
+            JOT_decorateButtons();
+        }
+
+        // Fires delayed events.
+        (function() {
+            JOT_fullyLoaded = true;
+            var delayedEvents = JOT_delayedEvents;
+            for (var x = 0; x < delayedEvents.length; x++) {
+                var event = delayedEvents[x];
+                JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+            }
+            JOT_delayedEvents = null;
+            JOT_postEvent('pageLoaded');
+        })();
+        //]]>
+    </script>
+    <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_postEvent('decorateGvizCharts');
+    </script>
+    <script type="text/javascript">
+        JOT_setupPostRenderingManager();
+    </script>
+    <script type="text/javascript">
+        JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+    </script>
+    <div id="server-timer-div" style="display:none"> </div>
+    <script type="text/javascript">
+        window.jstiming.load.tick('render');
+        JOT_postEvent('usercontentrendered', this);
+    </script>
+    <script type="text/javascript" src="../navigation.js"></script>
+</body>
+
+<!-- Mirrored from sites.google.com/site/ieeevcip2015/program by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Mar 2015 17:30:05 GMT -->
+
+</html>
