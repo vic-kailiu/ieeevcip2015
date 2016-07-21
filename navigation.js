@@ -20,10 +20,10 @@
   //   }
   // }
 
-  if (dueDays_event >=0) {
-    document.getElementById("countdown_event_dig").innerHTML = dueDays_event;
-    if (dueDays_event <=1) {
-      document.getElementById("countdown_event_text").innerHTML = "day until";
-    }
-  }
+  // if (dueDays_event >=0) {
+  //   document.getElementById("countdown_event_dig").innerHTML = dueDays_event;
+  //   if (dueDays_event <=1) {
+  //     document.getElementById("countdown_event_text").innerHTML = "day until";
+  //   }
+  // }
 })();
